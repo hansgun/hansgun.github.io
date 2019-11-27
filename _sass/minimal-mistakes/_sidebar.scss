@@ -75,7 +75,8 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    position: absolute;
+    position: sticky;
+    float: right;
     top: 0;
     right: 0;
     width: $right-sidebar-width-narrow;

@@ -1,19 +1,24 @@
 ---
-layout: default
-title:  "Welcome to Jekyll!"
+layout: single
+##classes: wide
+title:  "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]"
 date:   2015-11-17 16:16:01 -0600
 categories: jekyll update
 toc: true
+toc_label: "Setup CI/CD"
+toc_icon: "cog"
+toc_position: sticky
 ---
 
-# 0. 구성요소
+## 0. 구성요소
 * jenkins
 * nexus OSS
 * ansible
 * docker
 
-# 1. Jenkins 설치 
+## 1. Jenkins 설치 
 ### 1-1. 다운로드 및 실행
+
 ```bash
 wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
 #java -jar jenkins.war --httpPort=8080 --prefix=/jenkins
@@ -24,20 +29,17 @@ http://<hostname>:8080/jenkins
 ```
 
 ### 1-3. slave 설정
+> `UI 에서 Jenkins 관리 > 노드관리 로 옮긴후 신규노드 를 열어봅니다:`    
+> `1. 노드명을 입력: 예를들어 slave-01`    
+> `2. Permanent Agent 를 선택`    
+> `설정 Page 에서:`    
+> `1. Remote root directory 에 입력, 예를들어, /opt/jenkins.`    
+> `2. Launch method 는 Launch Slave Agents via SSH 를 선택, host 명 입력후 credential 추가`   
+> `2.1 Credential 추가시 Slave node user, jenkins 와 그 password 를 등록함`    
+> `2.2 혹은 SSH Username with private key 선택, From the jenkins master ~/.ssh  선택`   
+`2.2.1 master 에서`    
+
 ```bash
-UI 에서 Jenkins 관리 > 노드관리 로 옮긴후 신규노드 를 열어봅니다:
-1. 노드명을 입력: 예를들어 slave-01.
-2. Permanent Agent 를 선택.
-
-설정 Page 에서:
-1. Remote root directory 에 입력, 예를들어, /opt/jenkins.
-2. Launch method 는 Launch Slave Agents via SSH 를 선택하고 host 명을 입력하고 credential 을 추가함.
-2.1 Credential 추가시 Slave node user, 예를들어 jenkins 와 그 password 를 등록함.
-
-2.2 혹은 Credential 추가시 SSH Username with private key 로 선택을 하고, From the jenkins master ~/.ssh 를 선택: 이때 master, slave 에서 다음과 같은 수행을 해야함.
-2.2.1 master, slave 에서 user jenkins 에 대한 password 설정.
-2.2.2 master 에서
-
 sudo su - jenkins;
 
 # generate key.
@@ -57,7 +59,8 @@ chmod 600 ~/.ssh/config
 ssh emb-a01;
 ```
 
-# 2. nexus 설치
+## 2. nexus 설치
+
 ```bash
 # download.
 # https://www.sonatype.com/download-oss-sonatype
@@ -84,11 +87,10 @@ vi nexus.vmoptions;
 -Djava.io.tmpdir=../sonatype-work/nexus3/tmp ## 변경
 -Dkaraf.startLocalConsole=false
 ```
+## 3. nexus docker registry 설정
+> Reference: [config reference](https://www.ivankrizsan.se/2016/06/09/create-a-private-docker-registry/)
 
-# 3. nexus docker registry 설정
-* Reference: [config reference](https://www.ivankrizsan.se/2016/06/09/create-a-private-docker-registry/)
-
-# 4. nexus 설정용 pom file
+## 4. nexus 설정용 pom file
 ### 4-1. pom.xml
 ```xml
     <repositories>
@@ -156,7 +158,7 @@ vi settings.xml
 mvn -e -DskipTests=true clean install deploy;
 ```
 
-# 5. 배포 대상 서버 설정
+## 5. 배포 대상 서버 설정
 ### 5-1. docker private registry 등록
 ```ksh
 # /etc/docker/daemon.json 파일 편집하여 secure 예외 처리 등록
@@ -200,7 +202,7 @@ docker images | grep -i jenkins
 ------------------------------------
 ```
 
-# 6. Nexus R-plugin 설정
+## 6. Nexus R-plugin 설정
 ### 6-1. plugin 다운로드
 #### requirements
 * Apache Maven 3.3.3+
