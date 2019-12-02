@@ -5,7 +5,7 @@ title:  "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]"
 date:   2015-11-17 16:16:01 -0600
 categories: jekyll update
 toc: true
-toc_label: "Setup CI/CD"
+toc_label: "On This Page"
 toc_icon: "cog"
 toc_position: sticky
 ---
@@ -244,8 +244,8 @@ docker images | grep -i jenkins
 plugin [Download link](https://github.com/sonatype-nexus-community/nexus-repository-r/releases)
 * nexus-repository-r-1.0.4.jar 기준으로 아래에 설명
 
-### 6-2. R-plugin 설치  
-#####  아래의 3개의 파일 복사와 설정 추가 필요함
+### 6-2. R-plugin 설치 
+1.) 아래의 3개의 파일 복사와 설정 추가 필요함
   - `<nexus_dir>/system/org/sonatype/nexus/plugins/nexus-repository-r/1.0.4/nexus-repository-r-1.0.4.jar`
   - `<nexus_dir>/system/com/sonatype/nexus/assemblies/nexus-oss-feature/3.x.y/nexus-oss-feature-3.x.y-features.xml`
   - `<nexus_dir>/system/com/sonatype/nexus/assemblies/nexus-pro-feature/3.x.y/nexus-pro-feature-3.x.y-features.xml`
