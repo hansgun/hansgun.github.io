@@ -1,8 +1,8 @@
 ---
 layout: single
 ##classes: wide
-title:  "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]"
-date:   2015-11-17 16:16:01 -0600
+title: "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]"
+date: 2019-11-17 16:16:01 -0600
 categories: jekyll update
 toc: true
 toc_label: "On This Page"
