@@ -17,6 +17,7 @@ sidebar: docs
 ---
 
 > _project 구현 기반. single server에 single proxy, 2-java Oauth container를 연결한 형태임  
+
 # 1. 기본 개념
   * 외부 통신은 단일 interface를 통하여 수행. (nginX reverse proxy 이용, port 8078[현재버전])
   * 실제 authorizer component는 이중화 구성하며, 외부에 노출되는 port는 없음
