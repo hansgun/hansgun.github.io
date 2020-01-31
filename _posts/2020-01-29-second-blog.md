@@ -16,6 +16,7 @@ toc_icon: "cog"
 sidebar: docs
 ---
 
+> _project 구현 기반. single server에 single proxy, 2-java Oauth container를 연결한 형태임  
 # 1. 기본 개념
   * 외부 통신은 단일 interface를 통하여 수행. (nginX reverse proxy 이용, port 8078[현재버전])
   * 실제 authorizer component는 이중화 구성하며, 외부에 노출되는 port는 없음
@@ -48,6 +49,10 @@ sh make_docker_compose.sh <설치된 물리서버 IP address> ## IP address는 .
 
 `make_docker_compose.sh`
 
+<details>
+	<summary><font size=4 color="blue"> View Source </font></summary>
+
+<div markdown="1">
 ```bash
 #!/bin/bash
 
@@ -83,7 +88,10 @@ mvn -e -DskipTests=true clean install
 
 ## docker-compose up
 docker-compose up --build -d
+
 ```
+</div>
+</details>
 
 ### 2-2-2. docker-compose 관련 파일
   * docker-compose.yml : service 전체 내용 및 dependency 실행 순서 등 container 제어
@@ -95,7 +103,10 @@ docker-compose up --build -d
 * 순서대로 redis, authorizer1, authorizer2, proxy 4개의 이미지를 생성
 * proxy service 구성 중 links 부분은 명명된 service를 ip가 아닌 name으로 접근 가능하도록 설정함 
 
+<details>
+  <summary><font size=4 color="blue"> View Source </font></summary>
 
+  <div markdown="1">
 ```yaml
 # VERSION 1.0.0
 # AUTHOR: project
@@ -161,12 +172,19 @@ services:
       timeout: 1s
       retries: 5
 ```
+</div>
+</details>
 
 ### 2-2-3. NginX 관련
   * Dockerfile_proxy : nginx image를 생성하는 dockerfile
   * nginx.conf : nginx 에서 사용할 config 를 미리 정의한 내용
 
 `Dockerfile_proxy`
+<details>
+  <summary><font size=4 color="blue"> View Source </font></summary>
+
+  <div markdown="1">
+
 ```
 # VERSION v.1.0.0
 # AUTHOR: hansgun
@@ -178,11 +196,17 @@ FROM nginx:latest
 
 COPY ./nginx.conf /etc/nginx/ ## current directory 에서 conf 파일 복사
 ```
+</div>
+</details>
 
 `nginx.conf`
 
 * ** 특이점은 nginx 에서 authorizer1,2 docker 접근 시 IP가 아닌 hostname으로 접근하여, container 내부의 port를 직접 접근 함
 
+<details>
+  <summary><font size=4 color="blue"> View Source </font></summary>
+
+  <div markdown="1">
 ```
 # /etc/nginx/nginx.conf
 
@@ -220,11 +244,17 @@ http {
     }
 }
 ```
+</div>
+</details>
 
 ## 3. 실행결과
 
 `sh make_docker_compose.sh 192.168.1.168 <-- IP는 환경에 맞게 변경 필요`
 
+<details>
+  <summary><font size=4 color="blue"> View results  </font></summary>
+
+  <div markdown="1">
 ```
 0 th parameter = 192.168.1.168
 [INFO] Error stacktraces are turned on.
@@ -333,6 +363,8 @@ Recreating projectauthorizer_authorizer2_1 ... done
 Recreating projectauthorizer_authorizer1_1 ... done
 Recreating projectauthorizer_proxy_1       ... done
 ```
+</div>
+</details>
 
 `docker-compose ps`
 ```
@@ -345,7 +377,10 @@ projectauthorizer_redis_1         docker-entrypoint.sh redis ...   Up           
 
 ```
 `docker network inspect projectauthorizer_default`
+<details>
+  <summary><font size=4 color="blue"> View docker inspect </font></summary>
 
+  <div markdown="1">
 ```js
 [
     {
@@ -411,6 +446,9 @@ projectauthorizer_redis_1         docker-entrypoint.sh redis ...   Up           
     }
 ]
 ```
+</div>
+</details>
+
 ## 4. 접근 테스트
 ` http://<서버 IP>:8078/spring-security-oauth-server/ `
 

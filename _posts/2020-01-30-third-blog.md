@@ -14,13 +14,10 @@ toc_position: sticky
 
 
 # 1. [Project] 개발 환경 설정
-
 > #### _프로젝트 수행 결과로 민감한 정보는 [] 혹은 <> 으로 내용을 대치함_
 
 ## 1.1 Host Naming Convention 
 `[Project]-<flag><node-number>[-<env>].io`
-
-
 
 `<flag>`:
 
@@ -62,7 +59,7 @@ sudo su - <UserID>;
 * Redis
 * PostgreSQL
 
-### 1.5 PostgreSQL DB 연결
+## 1.5 PostgreSQL DB 연결
 PostgreSQL Client 로 PostgreSQL Server 에 다음과 같이 연결할수 있습니다.
 
 Airflow DB:
@@ -76,19 +73,23 @@ psql -h[Project]-s01-dev -p 5432 -U <userschema> -W -d <userDB_name>;
 ```
 
 
-### 1.6 Airflow Components
-설치된 Airflow Component 들은 Docker Container 로서 실행되고 있습니다.
+## ~~1.6 Airflow Components ( Old Version. See 1.7 section)~~
+~~설치된 Airflow Component 들은 Docker Container 로서 실행되고 있습니다.~~
 
-설치된 Airflow Component 들은 다음과 같습니다: 
+~~설치된 Airflow Component 들은 다음과 같습니다.~~ 
 
-* WebServer: [http:<서버IP>:8080]
-* Worker
-* Scheduler
-* Flower: [http:<서버IP>:5555]
+ * ~~WebServer: [http:<서버IP>:8080]~~
+ * ~~Worker~~
+ * ~~Scheduler~~
+ * ~~Flower: [http:<서버IP>:5555]~~
 
-#### 1.6.1 Airflow Docker 설치 방법 v.1
-Docker Container 형태로 Airflow 를 설치하는 방법을 설명하겠습니다.
+### ~~1.6.1 Airflow Docker 설치 방법 v.1 (Old Version.)~~
+~~Docker Container 형태로 Airflow 를 설치하는 방법을 설명하겠습니다.~~
 
+<details>
+  <summary><font size=4 color="blue"> View Source </font></summary>
+
+  <div markdown="1">
 
 ```bash
 # add user to docker group.
@@ -261,12 +262,14 @@ curl -X POST --header "rest_api_plugin_http_token: changeme" -H 'Content-Type: m
 # trigger dag.
 curl --header "rest_api_plugin_http_token: changeme" http://<서버IP>:8080/admin/rest_api/api?api=trigger_dag&dag_id=tutorial-<project_name>7
 ```
+</div>
+</details>
 
-### 1.7 Airflow Docker 설치 방법 v.2 (using docker-compose) 
+## 1.7 Airflow Docker 설치 방법 v.2 (using docker-compose) 
 * docker compose를 통하여 component dependency를 고려하여 single command로 실행
 * 실제 수행 내용은 v.1 과 동일.
 
-#### 1.7.1 설치과정 
+### 1.7.1 설치과정 
 파일 위치 : `[Project]/workflow/docker-airflow` <br>
 관련 파일 : 
 * `docker-compose.yml`
@@ -293,6 +296,10 @@ APP_VOLUMN_DIR=/Users/han/data01/airflow/docker-airflowvolumns
 ```
 `docker-compose.yml` 파일 내용 (주석 내용은 현재 환경에 이미 설치되어 있다고 가정하였을 때)
 
+<details>
+      <summary><font size=4 color="blue"> View Source </font></summary>
+
+	      <div markdown="1">
 ```yaml
 version: '2.1'
 
@@ -436,7 +443,10 @@ version: '2.1'
      depends_on:
        - airflow-scheduler
 ```
-#### 1.7.2 실행결과 
+</div>
+</details>
+
+### 1.7.2 실행결과 
 
 ```bash
 > docker-compose -p [Project] up -d                                                                                                  
@@ -454,7 +464,7 @@ c726e9fdfbc2        [Project]_airflow-webserver   "/entrypoint.sh webs…"   7 s
 >      
                    
 ```
-#### 1.7.3 scale-out test
+### 1.7.3 scale-out test
 
 ```bash
 > docker ps                                                                                                                        CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                        NAMES
@@ -475,7 +485,7 @@ ac788e72dd21        airflow_scheduler   "/entrypoint.sh sche…"   45 seconds ag
 4483b48d0078        airflow_webserver   "/entrypoint.sh webs…"   47 seconds ago      Up 45 seconds       5555/tcp, 8793/tcp, 0.0.0.0:8080->8080/tcp   airflow_webserver_1
 > 
 ```
-### 1.8 R Package 설치 방법
+## 1.8 R Package 설치 방법
 
 ```bash
 cd ${[Project]_ROOT_DIR}/workflow/job-runner/skytale
