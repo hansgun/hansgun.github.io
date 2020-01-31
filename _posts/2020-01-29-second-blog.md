@@ -52,8 +52,8 @@ sh make_docker_compose.sh <설치된 물리서버 IP address> ## IP address는 .
 
 <details>
 	<summary><font size=4 color="blue"> View Source </font></summary>
-
 <div markdown="1">
+
 ```bash
 #!/bin/bash
 
@@ -108,6 +108,7 @@ docker-compose up --build -d
   <summary><font size=4 color="blue"> View Source </font></summary>
 
   <div markdown="1">
+
 ```yaml
 # VERSION 1.0.0
 # AUTHOR: project
@@ -208,6 +209,7 @@ COPY ./nginx.conf /etc/nginx/ ## current directory 에서 conf 파일 복사
   <summary><font size=4 color="blue"> View Source </font></summary>
 
   <div markdown="1">
+
 ```
 # /etc/nginx/nginx.conf
 
@@ -256,6 +258,7 @@ http {
   <summary><font size=4 color="blue"> View results  </font></summary>
 
   <div markdown="1">
+
 ```
 0 th parameter = 192.168.1.168
 [INFO] Error stacktraces are turned on.
@@ -382,6 +385,7 @@ projectauthorizer_redis_1         docker-entrypoint.sh redis ...   Up           
   <summary><font size=4 color="blue"> View docker inspect </font></summary>
 
   <div markdown="1">
+
 ```js
 [
     {
