@@ -1,12 +1,16 @@
 # main links
 main:
-  - title: "Work"
+  - title: " | 어쩔수 없는 | "
     url: /work/
-  - title: "Living"
+  - title: " | 관심 있는 | "
+    url: /study/
+  - title: " | 좋아하는 | "
     url: /living/
-  - title: "About"
+  - title: " | Collections | "
+    url: /portfolio/
+  - title: " | About | "
     url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Sitemap"
+    url: /sitemap/

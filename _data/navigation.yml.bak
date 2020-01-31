@@ -1,0 +1,16 @@
+# main links
+main:
+   - title: "Work" 
+     children:
+       - title: "Dev"
+         url: /work/dev
+   - title: "Living"
+     url: /living/
+   - title: "About"
+     url: /about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
