@@ -1,14 +1,9 @@
 ---
 layout: single
-#classes: wide
+##classes: wide
 title: "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]"
 date: 2019-11-17 16:16:01 -0600
-categories: work
-tags:
-  - jenkins
-  - nexus OSS
-  - CI/CD
-author_profile: false
+categories: jekyll update
 toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
@@ -177,10 +172,10 @@ sudo systemctl stop docker
 sudo systemctl start docker
 
 # <userID> 계정(group id : docker) 에서 정보 확인
-# docker info의 마지막 섹션 확인
+# docker info의 마지막 세션 확인
 docker info
 ------------------------------------
-....(생략)....
+....
  Insecure Registries:
   <ip or domain>:<port>
    127.0.0.0/8

@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: " | 어쩔수 없이 하는 것 | "
+  - title: " | 어쩔수 없는 | "
     url: /work/
-  - title: " | 관심 있는 것 | "
-    url: study
-  - title: " | 좋아하는 것 | "
+  - title: " | 관심 있는 | "
+    url: /study/
+  - title: " | 좋아하는 | "
     url: /living/
   - title: " | Collections | "
     url: /portfolio/
