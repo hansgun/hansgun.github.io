@@ -1,6 +1,6 @@
 ---
 layout: single
-classes: wide
+#classes: wide
 title: "Authorizer Architecuture"
 date: 2020-01-28 06:38:01 -0600
 author_profile: false

@@ -13,8 +13,11 @@ toc_position: sticky
 ---
 
 
-# 1. [Project] 개발 환경 설정
-> #### _프로젝트 수행 결과로 민감한 정보는 [] 혹은 <> 으로 내용을 대치함_
+# 1. [Project] 개발 환경 설정 
+
+----
+  > #### _프로젝트 수행 결과로 민감한 정보는 [] 혹은 <> 으로 내용을 대치함_
+----
 
 ## 1.1 Host Naming Convention 
 `[Project]-<flag><node-number>[-<env>].io`
@@ -71,7 +74,6 @@ User sample DB:
 ```bash
 psql -h[Project]-s01-dev -p 5432 -U <userschema> -W -d <userDB_name>;
 ```
-
 
 ## ~~1.6 Airflow Components ( Old Version. See 1.7 section)~~
 ~~설치된 Airflow Component 들은 Docker Container 로서 실행되고 있습니다.~~
