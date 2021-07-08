@@ -13,9 +13,9 @@ source "https://rubygems.org"
 
 # To upgrade, run `bundle update`.
 
-gem "jekyll"
+gem "jekyll", "~> 3.5"
 gem "minimal-mistakes-jekyll"
-
+gem "kramdown-parser-gfm"
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
 #   gem "jekyll-sitemap"
@@ -33,3 +33,5 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
   gem "jekyll-archives"
 end
+
+gem "webrick", "~> 1.7"
