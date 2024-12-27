@@ -1,7 +1,7 @@
 ---
 layout: single
 #classes: wide
-title: "Redis A-S-S(Active-Standby) cluster 구축기"
+title: "Redis A-S(Active-Standby/Master-Slave) cluster 구축기"
 date: 2024-11-01 16:16:01 -0600
 categories: work
 tags:
@@ -83,6 +83,16 @@ gcloud container clusters get-credentials $CLUSTER_NAME --zone $ZONE
 gcloud compute disks create --size=10GB --zone=asia-east1-a nfs-disk
 ```
 
+# 3. k8s 워크로드 구성
+## 3-1. 파일 구조
+```bash
+$ tree v1 -L 1
+├── 00.disk.yaml
+├── 01.sts.yaml
+├── 02.svc.yaml
+├── 04.grafana_svc.yaml
+└── backup
+```
 # (작성중)
 # 7. [참고 사이트]
 
