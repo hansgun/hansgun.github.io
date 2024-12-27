@@ -5,6 +5,7 @@ title: "Setup Prometheus on private k8s cluster"
 date: 2024-12-17 16:16:01 -0600
 categories: work
 tags:
+  - Observability
   - Prometheus
   - Loki
   - Tempo
@@ -15,6 +16,8 @@ toc_label: "On This Page"
 toc_icon: "cog"
 toc_position: sticky
 ---
+
+
 # Prolog 
 - 상용 SaaS Observability 툴은 modern한 그래픽과 편의성을 제공하지만(ex:Datadog), 사용량 base로 과금으로 최적화 하지 않은 Log, Trace 혹은 Profile 기능을 활용 시 과금 폭탄을 맞고 있다. 
 - Open Source 이자, k8s 환경에 잘 적용되고, 빠르게 발전중인 Prometheus로 대체 하고자 현 운영중인 private k8s cluster에 prometheus stack을 적용한 이야기를 적어본다. 
@@ -26,6 +29,13 @@ toc_position: sticky
 * Loki - for log
 * Tempo, Opentelemetry Agent - for trace
 * Exporters - Redis, PostgreSQL
+
+### 0-1. Trace 설정 관련 
+- 고려한 솔루션은 `Jaeger`, `Zipkin`, `Tempo` 등이 있으며, 앞의 2개 솔루션은 몇 가지 단점이 있으며 사실 상 deprecated 되어 Tempo를 활용하기로 결정 
+  - `Jeager` : CNCF 등록 프로젝트이나, 설정이 복잡함
+  - `Zipkin` : Java 진영의 Trace용 솔루션으로, 커뮤니티 활성화가 되어 있지 않아 이슈 해결의 어려움. 
+  - `Tempo` : 상대적으로 신생 프로젝트이나 `Grafana` 진영에서 주 프로젝트로 관리하고, `Grafana` 생태계와 연동하기 좋음. ~~UI! 짱~~
+- `Opentelemetry Auto-instruments`를 이용해 Trace data를 주입하고자 하였으나, `8443 port`를 k8s cluster node 단에서 오픈이 필요하여 이 부분은 생략함. ~~사실 namespace별, service별 operator 배포가 귀찮은 것도..~~
 
 ## 1. 환경 설정
 ----
@@ -359,7 +369,7 @@ helm upgrade --install otel-collector . -f values.yaml
 
 ### 4-4. `opentelemetry-instatruments` 설정
 - instruments 설정 방벙에는 여러 가지가 있으며, 앞서 살펴본 바와 같이 auto-instruments를 설정하여 resource 생성 시 tag를 활용하여 자동 주입되는 환경은 아니다. 
-  : 해당 설정을 위해서는 **certManager Webhook** 설정이 필요하며 이는 **cluster 의 9443 port open 필요**
+- 해당 설정을 위해서는 **certManager Webhook** 설정이 필요하며 이는 **cluster 의 8443 port open 필요**
 - 여기서는 instrument를 별도로 설치하지 않고, 보내는 서비스에서 lib 파일을 agent 형태로 추가하여 collector에 전송하는 방법을 택했다. 
 - 참고 사항으로 auto-instruments 설정을 위한 manifests 파일은 아래와 같다. 
 
@@ -522,4 +532,4 @@ service:
 - `multi-cluster` 적용과 multicluster를 통합한 `Thanos` 적용기도 추가할 예정이다. 
 <br>
 
-
+---
