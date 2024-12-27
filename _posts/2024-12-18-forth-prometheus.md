@@ -368,7 +368,7 @@ helm upgrade --install otel-collector . -f values.yaml
 ```
 
 ### 4-4. `opentelemetry-instatruments` 설정
-- instruments 설정 방벙에는 여러 가지가 있으며, 앞서 살펴본 바와 같이 auto-instruments를 설정하여 resource 생성 시 tag를 활용하여 자동 주입되는 환경은 아니다. 
+- instruments 설정 방벙에는 여러 가지가 있으며, 앞서 살펴본 바와 같이 auto-instruments를 설정하여 resource 생성 시 tag를 활용하여 자동 주입되는 환경은 아니다. <br>
 - 해당 설정을 위해서는 **certManager Webhook** 설정이 필요하며 이는 **cluster 의 8443 port open 필요**
 - 여기서는 instrument를 별도로 설치하지 않고, 보내는 서비스에서 lib 파일을 agent 형태로 추가하여 collector에 전송하는 방법을 택했다. 
 - 참고 사항으로 auto-instruments 설정을 위한 manifests 파일은 아래와 같다. 
