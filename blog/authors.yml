@@ -1,0 +1,10 @@
+hansgun:
+  name: Hanbyul Cho
+  title: Engineer
+  url: https://github.com/hansgun
+  image_url: https://github.com/hansgun.png
+  page: true
+  socials:
+    # x: hansgun
+    linkedin: hanbyulcho1
+    github: hansgun

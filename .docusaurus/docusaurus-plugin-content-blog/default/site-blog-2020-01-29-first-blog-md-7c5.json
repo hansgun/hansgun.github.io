@@ -1,0 +1,71 @@
+{
+  "permalink": "/blog/2020/01/29/first-blog",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2020-01-29-first-blog.md",
+  "source": "@site/blog/2020-01-29-first-blog.md",
+  "title": "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]",
+  "description": "0. 구성요소",
+  "date": "2019-11-17T16:16:01.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "jenkins",
+      "permalink": "/blog/tags/jenkins"
+    },
+    {
+      "inline": true,
+      "label": "nexus OSS",
+      "permalink": "/blog/tags/nexus-oss"
+    },
+    {
+      "inline": true,
+      "label": "CI/CD",
+      "permalink": "/blog/tags/ci-cd"
+    }
+  ],
+  "readingTime": 5.94,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Hanbyul Cho",
+      "title": "Engineer",
+      "url": "https://github.com/hansgun",
+      "page": {
+        "permalink": "/blog/authors/hansgun"
+      },
+      "socials": {
+        "x": "https://x.com/hansgun",
+        "github": "https://github.com/hansgun"
+      },
+      "imageURL": "https://github.com/hansgun.png",
+      "key": "hansgun"
+    }
+  ],
+  "frontMatter": {
+    "layout": "post",
+    "title": "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]",
+    "date": "2019-11-17T16:16:01.000Z",
+    "categories": "work",
+    "tags": [
+      "jenkins",
+      "nexus OSS",
+      "CI/CD"
+    ],
+    "author_profile": false,
+    "toc": true,
+    "toc_label": "On This Page",
+    "toc_icon": "cog",
+    "toc_position": "sticky",
+    "authors": [
+      "hansgun"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Authorizer Architecuture",
+    "permalink": "/blog/2020/01/29/second-blog"
+  },
+  "nextItem": {
+    "title": "Set up project dev environments",
+    "permalink": "/blog/2020/01/30/third-blog"
+  }
+}

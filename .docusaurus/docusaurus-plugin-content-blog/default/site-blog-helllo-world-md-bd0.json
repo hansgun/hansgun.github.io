@@ -1,0 +1,22 @@
+{
+  "permalink": "/helllo_world",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/helllo_world.md",
+  "source": "@site/blog/helllo_world.md",
+  "title": "Hello World!",
+  "description": "Hello !",
+  "date": "2024-12-27T13:44:51.131Z",
+  "tags": [],
+  "readingTime": 0.05,
+  "hasTruncateMarker": false,
+  "authors": [],
+  "frontMatter": {
+    "layout": "post",
+    "title": "Hello World!",
+    "category": "work"
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Setup Prometheus on private k8s cluster",
+    "permalink": "/2024/12/18/forth-prometheus"
+  }
+}

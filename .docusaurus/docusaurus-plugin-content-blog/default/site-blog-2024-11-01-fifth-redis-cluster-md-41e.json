@@ -1,0 +1,65 @@
+{
+  "permalink": "/2024/11/01/fifth-Redis-cluster",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2024-11-01-fifth-Redis-cluster.md",
+  "source": "@site/blog/2024-11-01-fifth-Redis-cluster.md",
+  "title": "Redis A-S(Active-Standby/Master-Slave) cluster 구축기",
+  "description": "summary",
+  "date": "2024-11-01T16:16:01.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "Redis Cluster",
+      "permalink": "/tags/redis-cluster"
+    },
+    {
+      "inline": true,
+      "label": "kubernetes",
+      "permalink": "/tags/kubernetes"
+    }
+  ],
+  "readingTime": 3.285,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Hanbyul Cho",
+      "title": "Engineer",
+      "url": "https://github.com/hansgun",
+      "page": {
+        "permalink": "/authors/hansgun"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/hanbyulcho1/",
+        "github": "https://github.com/hansgun"
+      },
+      "imageURL": "https://github.com/hansgun.png",
+      "key": "hansgun"
+    }
+  ],
+  "frontMatter": {
+    "layout": "single",
+    "title": "Redis A-S(Active-Standby/Master-Slave) cluster 구축기",
+    "date": "2024-11-01 16:16:01 -0600",
+    "categories": "work",
+    "tags": [
+      "Redis Cluster",
+      "kubernetes"
+    ],
+    "author_profile": false,
+    "toc": true,
+    "toc_label": "On This Page",
+    "toc_icon": "cog",
+    "toc_position": "sticky",
+    "authors": [
+      "hansgun"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Setup Prometheus on private k8s cluster",
+    "permalink": "/2024/12/18/forth-prometheus"
+  },
+  "nextItem": {
+    "title": "AKS terraform으로 시작해보기",
+    "permalink": "/2024/10/26/sixth-terrform-aks"
+  }
+}

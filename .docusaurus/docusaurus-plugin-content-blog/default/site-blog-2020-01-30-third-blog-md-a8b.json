@@ -1,0 +1,53 @@
+{
+  "permalink": "/2020/01/30/third-blog",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2020-01-30-third-blog.md",
+  "source": "@site/blog/2020-01-30-third-blog.md",
+  "title": "Set up project dev environments",
+  "description": "summary",
+  "date": "2019-01-29T00:16:01.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "dev",
+      "permalink": "/tags/dev"
+    }
+  ],
+  "readingTime": 8.615,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Hanbyul Cho",
+      "title": "Engineer",
+      "url": "https://github.com/hansgun",
+      "page": {
+        "permalink": "/authors/hansgun"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/hanbyulcho1/",
+        "github": "https://github.com/hansgun"
+      },
+      "imageURL": "https://github.com/hansgun.png",
+      "key": "hansgun"
+    }
+  ],
+  "frontMatter": {
+    "layout": "post",
+    "title": "Set up project dev environments",
+    "date": "2019-01-29 00:16:01 -0600",
+    "tags": [
+      "dev"
+    ],
+    "toc": true,
+    "toc_label": "On This Page",
+    "toc_icon": "cog",
+    "toc_position": "sticky",
+    "authors": [
+      "hansgun"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]",
+    "permalink": "/2019/11/17/first-blog"
+  }
+}
