@@ -7,14 +7,16 @@
   "date": "2024-11-01T16:16:01.000Z",
   "tags": [
     {
-      "inline": true,
+      "inline": false,
       "label": "Redis Cluster",
-      "permalink": "/tags/redis-cluster"
+      "permalink": "/tags/Redis Cluster",
+      "description": "Redis Cluster tag description"
     },
     {
-      "inline": true,
+      "inline": false,
       "label": "kubernetes",
-      "permalink": "/tags/kubernetes"
+      "permalink": "/tags/kubernetes",
+      "description": "kubernetes tag description"
     }
   ],
   "readingTime": 3.285,

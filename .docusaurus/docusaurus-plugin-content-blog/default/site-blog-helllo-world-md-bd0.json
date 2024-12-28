@@ -6,8 +6,8 @@
   "description": "Hello !",
   "date": "2024-12-28T12:04:31.000Z",
   "tags": [],
-  "readingTime": 0.05,
-  "hasTruncateMarker": false,
+  "readingTime": 0.06,
+  "hasTruncateMarker": true,
   "authors": [],
   "frontMatter": {
     "layout": "post",

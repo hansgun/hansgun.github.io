@@ -5,7 +5,7 @@ title: "AKS terraform으로 시작해보기"
 date: 2024-10-26 16:16:01 -0600
 categories: work
 tags:
-  - Redis Cluster
+  - GKE
   - kubernetes
 author_profile: false
 toc: true

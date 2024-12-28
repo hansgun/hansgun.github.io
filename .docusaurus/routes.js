@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    exact: true
+  },
+  {
     path: '/2019/11/17/first-blog',
     component: ComponentCreator('/2019/11/17/first-blog', 'd5b'),
     exact: true
@@ -68,8 +103,13 @@ export default [
     exact: true
   },
   {
-    path: '/tags/ci-cd',
-    component: ComponentCreator('/tags/ci-cd', '334'),
+    path: '/tags/auto-instrument',
+    component: ComponentCreator('/tags/auto-instrument', 'd75'),
+    exact: true
+  },
+  {
+    path: '/tags/CI/CD',
+    component: ComponentCreator('/tags/CI/CD', 'e9e'),
     exact: true
   },
   {
@@ -83,6 +123,11 @@ export default [
     exact: true
   },
   {
+    path: '/tags/GKE',
+    component: ComponentCreator('/tags/GKE', '588'),
+    exact: true
+  },
+  {
     path: '/tags/jenkins',
     component: ComponentCreator('/tags/jenkins', '443'),
     exact: true
@@ -93,38 +138,38 @@ export default [
     exact: true
   },
   {
-    path: '/tags/loki',
-    component: ComponentCreator('/tags/loki', 'e98'),
+    path: '/tags/Loki',
+    component: ComponentCreator('/tags/Loki', 'e68'),
     exact: true
   },
   {
-    path: '/tags/nexus-oss',
-    component: ComponentCreator('/tags/nexus-oss', '8c9'),
+    path: '/tags/nexus OSS',
+    component: ComponentCreator('/tags/nexus OSS', '536'),
     exact: true
   },
   {
-    path: '/tags/observability',
-    component: ComponentCreator('/tags/observability', '850'),
+    path: '/tags/Observability',
+    component: ComponentCreator('/tags/Observability', '07f'),
     exact: true
   },
   {
-    path: '/tags/opentelemetry-auto-instrument',
-    component: ComponentCreator('/tags/opentelemetry-auto-instrument', 'e8c'),
+    path: '/tags/Opentelemetry',
+    component: ComponentCreator('/tags/Opentelemetry', 'c2e'),
     exact: true
   },
   {
-    path: '/tags/prometheus',
-    component: ComponentCreator('/tags/prometheus', '208'),
+    path: '/tags/Prometheus',
+    component: ComponentCreator('/tags/Prometheus', '47a'),
     exact: true
   },
   {
-    path: '/tags/redis-cluster',
-    component: ComponentCreator('/tags/redis-cluster', '34a'),
+    path: '/tags/Redis Cluster',
+    component: ComponentCreator('/tags/Redis Cluster', 'fc2'),
     exact: true
   },
   {
-    path: '/tags/tempo',
-    component: ComponentCreator('/tags/tempo', 'fa3'),
+    path: '/tags/Tempo',
+    component: ComponentCreator('/tags/Tempo', '0b7'),
     exact: true
   },
   {

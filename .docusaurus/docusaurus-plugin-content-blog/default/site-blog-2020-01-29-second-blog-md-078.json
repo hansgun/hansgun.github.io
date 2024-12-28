@@ -7,14 +7,16 @@
   "date": "2020-01-28T06:38:01.000Z",
   "tags": [
     {
-      "inline": true,
+      "inline": false,
       "label": "docker-compose",
-      "permalink": "/tags/docker-compose"
+      "permalink": "/tags/docker-compose",
+      "description": "docker-compose tag description"
     },
     {
-      "inline": true,
+      "inline": false,
       "label": "authorizer",
-      "permalink": "/tags/authorizer"
+      "permalink": "/tags/authorizer",
+      "description": "authorizer tag description"
     }
   ],
   "readingTime": 7.495,

@@ -7,14 +7,16 @@
   "date": "2024-10-26T16:16:01.000Z",
   "tags": [
     {
-      "inline": true,
-      "label": "Redis Cluster",
-      "permalink": "/tags/redis-cluster"
+      "inline": false,
+      "label": "GKE",
+      "permalink": "/tags/GKE",
+      "description": "GKE tag description"
     },
     {
-      "inline": true,
+      "inline": false,
       "label": "kubernetes",
-      "permalink": "/tags/kubernetes"
+      "permalink": "/tags/kubernetes",
+      "description": "kubernetes tag description"
     }
   ],
   "readingTime": 6.105,
@@ -41,7 +43,7 @@
     "date": "2024-10-26 16:16:01 -0600",
     "categories": "work",
     "tags": [
-      "Redis Cluster",
+      "GKE",
       "kubernetes"
     ],
     "author_profile": false,

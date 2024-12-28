@@ -7,19 +7,22 @@
   "date": "2019-11-17T16:16:01.000Z",
   "tags": [
     {
-      "inline": true,
+      "inline": false,
       "label": "jenkins",
-      "permalink": "/tags/jenkins"
+      "permalink": "/tags/jenkins",
+      "description": "jenkins tag description"
     },
     {
-      "inline": true,
+      "inline": false,
       "label": "nexus OSS",
-      "permalink": "/tags/nexus-oss"
+      "permalink": "/tags/nexus OSS",
+      "description": "nexus OSS tag description"
     },
     {
-      "inline": true,
+      "inline": false,
       "label": "CI/CD",
-      "permalink": "/tags/ci-cd"
+      "permalink": "/tags/CI/CD",
+      "description": "CI/CD tag description"
     }
   ],
   "readingTime": 5.965,

@@ -9,7 +9,8 @@ tags:
   - Prometheus
   - Loki
   - Tempo
-  - Opentelemetry auto-instrument
+  - Opentelemetry 
+  - auto-instrument
 author_profile: false
 toc: true
 toc_label: "On This Page"

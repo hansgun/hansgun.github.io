@@ -7,29 +7,40 @@
   "date": "2024-12-17T16:16:01.000Z",
   "tags": [
     {
-      "inline": true,
+      "inline": false,
       "label": "Observability",
-      "permalink": "/tags/observability"
+      "permalink": "/tags/Observability",
+      "description": "Observability tag description"
     },
     {
-      "inline": true,
+      "inline": false,
       "label": "Prometheus",
-      "permalink": "/tags/prometheus"
+      "permalink": "/tags/Prometheus",
+      "description": "Prometheus tag description"
     },
     {
-      "inline": true,
+      "inline": false,
       "label": "Loki",
-      "permalink": "/tags/loki"
+      "permalink": "/tags/Loki",
+      "description": "Loki tag description"
     },
     {
-      "inline": true,
+      "inline": false,
       "label": "Tempo",
-      "permalink": "/tags/tempo"
+      "permalink": "/tags/Tempo",
+      "description": "Tempo tag description"
     },
     {
-      "inline": true,
-      "label": "Opentelemetry auto-instrument",
-      "permalink": "/tags/opentelemetry-auto-instrument"
+      "inline": false,
+      "label": "Opentelemetry",
+      "permalink": "/tags/Opentelemetry",
+      "description": "Opentelemetry tag description"
+    },
+    {
+      "inline": false,
+      "label": "auto-instrument",
+      "permalink": "/tags/auto-instrument",
+      "description": "auto-instrument tag description"
     }
   ],
   "readingTime": 11.37,
@@ -60,7 +71,8 @@
       "Prometheus",
       "Loki",
       "Tempo",
-      "Opentelemetry auto-instrument"
+      "Opentelemetry",
+      "auto-instrument"
     ],
     "author_profile": false,
     "toc": true,

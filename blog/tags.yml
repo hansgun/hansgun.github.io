@@ -17,3 +17,75 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+jenkins:
+  label: jenkins
+  permalink: /jenkins
+  description: jenkins tag description
+
+nexus OSS:
+  label: nexus OSS
+  permalink: /nexus OSS
+  description: nexus OSS tag description
+
+CI/CD:
+  label: CI/CD
+  permalink: /CI/CD
+  description: CI/CD tag description
+
+Observability:
+  label: Observability
+  permalink: /Observability
+  description: Observability tag description
+
+docker-compose:
+  label: docker-compose
+  permalink: /docker-compose
+  description: docker-compose tag description
+
+authorizer:
+  label: authorizer
+  permalink: /authorizer
+  description: authorizer tag description
+
+Prometheus:
+  label: Prometheus
+  permalink: /Prometheus
+  description: Prometheus tag description
+
+Loki:
+  label: Loki
+  permalink: /Loki
+  description: Loki tag description
+
+Tempo:
+  label: Tempo
+  permalink: /Tempo
+  description: Tempo tag description
+
+Opentelemetry:
+  label: Opentelemetry
+  permalink: /Opentelemetry
+  description: Opentelemetry tag description
+
+auto-instrument:
+  label: auto-instrument
+  permalink: /auto-instrument
+  description: auto-instrument tag description
+
+Redis Cluster:
+  label: Redis Cluster
+  permalink: /Redis Cluster
+  description: Redis Cluster tag description
+
+kubernetes:
+  label: kubernetes
+  permalink: /kubernetes
+  description: kubernetes tag description
+
+GKE:
+  label: GKE
+  permalink: /GKE
+  description: GKE tag description
+
+  
