@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
     path: '/2019/11/17/first-blog',
     component: ComponentCreator('/2019/11/17/first-blog', 'd5b'),
     exact: true
@@ -113,11 +78,6 @@ export default [
     exact: true
   },
   {
-    path: '/tags/dev',
-    component: ComponentCreator('/tags/dev', '0f8'),
-    exact: true
-  },
-  {
     path: '/tags/docker-compose',
     component: ComponentCreator('/tags/docker-compose', '350'),
     exact: true
@@ -174,79 +134,73 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '733'),
+    component: ComponentCreator('/docs', '1a9'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '7e6'),
+        component: ComponentCreator('/docs', '838'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'ba6'),
+            component: ComponentCreator('/docs', 'c9f'),
             routes: [
               {
-                path: '/docs/category/tutorial---basics',
-                component: ComponentCreator('/docs/category/tutorial---basics', '20e'),
+                path: '/docs/Azure_cloud/AWS_Azure',
+                component: ComponentCreator('/docs/Azure_cloud/AWS_Azure', '9a6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/category/tutorial---extras',
-                component: ComponentCreator('/docs/category/tutorial---extras', '9ad'),
+                path: '/docs/Azure_cloud/AWS_codecommit',
+                component: ComponentCreator('/docs/Azure_cloud/AWS_codecommit', '558'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '61d'),
+                path: '/docs/Azure_cloud/CI_CD',
+                component: ComponentCreator('/docs/Azure_cloud/CI_CD', '720'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/congratulations',
-                component: ComponentCreator('/docs/tutorial-basics/congratulations', '458'),
+                path: '/docs/Azure_cloud/Inner_Architecture',
+                component: ComponentCreator('/docs/Azure_cloud/Inner_Architecture', 'e21'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/docs/tutorial-basics/create-a-blog-post', '108'),
+                path: '/docs/Azure_cloud/Introduction',
+                component: ComponentCreator('/docs/Azure_cloud/Introduction', 'b8c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/create-a-document',
-                component: ComponentCreator('/docs/tutorial-basics/create-a-document', '8fc'),
+                path: '/docs/Azure_cloud/Outer_Architecture',
+                component: ComponentCreator('/docs/Azure_cloud/Outer_Architecture', '36d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/create-a-page',
-                component: ComponentCreator('/docs/tutorial-basics/create-a-page', '951'),
+                path: '/docs/category/azure_cloud',
+                component: ComponentCreator('/docs/category/azure_cloud', '4da'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/docs/tutorial-basics/deploy-your-site', '4f5'),
+                path: '/docs/category/image_recorgnition',
+                component: ComponentCreator('/docs/category/image_recorgnition', 'b64'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/markdown-features',
-                component: ComponentCreator('/docs/tutorial-basics/markdown-features', 'b05'),
+                path: '/docs/Image_Recorgnition/multiple_object_detecting',
+                component: ComponentCreator('/docs/Image_Recorgnition/multiple_object_detecting', 'a5d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/docs/tutorial-extras/manage-docs-versions', '978'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/docs/tutorial-extras/translate-your-site', 'f9a'),
+                path: '/docs/Image_Recorgnition/object_tracking',
+                component: ComponentCreator('/docs/Image_Recorgnition/object_tracking', 'b96'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

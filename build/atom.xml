@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hansgun.github.io/</id>
-    <title>Han's blog Blog</title>
+    <title>Han's Blog</title>
     <updated>2024-12-28T12:04:31.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hansgun.github.io/"/>
-    <subtitle>Han's blog Blog</subtitle>
+    <subtitle>Han's Blog</subtitle>
     <icon>https://hansgun.github.io/img/imo.ico</icon>
     <entry>
         <title type="html"><![CDATA[Hello World!]]></title>
@@ -14,7 +14,7 @@
         <updated>2024-12-28T12:04:31.000Z</updated>
         <summary type="html"><![CDATA[Hello !]]></summary>
         <content type="html"><![CDATA[<p>Hello !</p>
-<p>어제(24.12.28) 만들었네요</p>]]></content>
+<p>어제(24.12.28) 이사왔어요!!</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Setup Prometheus on private k8s cluster]]></title>
@@ -214,7 +214,8 @@
         <category label="Prometheus" term="Prometheus"/>
         <category label="Loki" term="Loki"/>
         <category label="Tempo" term="Tempo"/>
-        <category label="Opentelemetry auto-instrument" term="Opentelemetry auto-instrument"/>
+        <category label="Opentelemetry" term="Opentelemetry"/>
+        <category label="auto-instrument" term="auto-instrument"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Redis A-S(Active-Standby/Master-Slave) cluster 구축기]]></title>
@@ -359,7 +360,7 @@
             <name>Hanbyul Cho</name>
             <uri>https://github.com/hansgun</uri>
         </author>
-        <category label="Redis Cluster" term="Redis Cluster"/>
+        <category label="GKE" term="GKE"/>
         <category label="kubernetes" term="kubernetes"/>
     </entry>
     <entry>
@@ -634,6 +635,5 @@
             <name>Hanbyul Cho</name>
             <uri>https://github.com/hansgun</uri>
         </author>
-        <category label="dev" term="dev"/>
     </entry>
 </feed>

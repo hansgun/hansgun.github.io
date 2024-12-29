@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Tutorial - Basics",
-    "permalink": "/docs/category/tutorial---basics"
+    "title": "Image Recorgnition",
+    "permalink": "/docs/category/image-recorgnition"
   },
   "next": {
     "title": "Create a Document",

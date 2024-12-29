@@ -1,0 +1,27 @@
+{
+  "id": "Azure_cloud/Introduction",
+  "title": "01. Introduction",
+  "description": "1. 개발 환경 준비",
+  "source": "@site/docs/Azure_cloud/Introduction.md",
+  "sourceDirName": "Azure_cloud",
+  "slug": "/Azure_cloud/Introduction",
+  "permalink": "/docs/Azure_cloud/Introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Azure_cloud/Introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Azure_cloud",
+    "permalink": "/docs/category/azure_cloud"
+  },
+  "next": {
+    "title": "02. Outer_Architecture",
+    "permalink": "/docs/Azure_cloud/Outer_Architecture"
+  }
+}

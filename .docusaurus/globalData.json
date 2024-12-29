@@ -8,61 +8,56 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "intro",
+          "mainDocId": "Azure_cloud/Introduction",
           "docs": [
             {
-              "id": "intro",
-              "path": "/docs/intro",
+              "id": "Azure_cloud/AWS_Azure",
+              "path": "/docs/Azure_cloud/AWS_Azure",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/congratulations",
-              "path": "/docs/tutorial-basics/congratulations",
+              "id": "Azure_cloud/AWS_codecommit",
+              "path": "/docs/Azure_cloud/AWS_codecommit",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorial-basics/create-a-blog-post",
+              "id": "Azure_cloud/CI_CD",
+              "path": "/docs/Azure_cloud/CI_CD",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-document",
-              "path": "/docs/tutorial-basics/create-a-document",
+              "id": "Azure_cloud/Inner_Architecture",
+              "path": "/docs/Azure_cloud/Inner_Architecture",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-page",
-              "path": "/docs/tutorial-basics/create-a-page",
+              "id": "Azure_cloud/Introduction",
+              "path": "/docs/Azure_cloud/Introduction",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial-basics/deploy-your-site",
+              "id": "Azure_cloud/Outer_Architecture",
+              "path": "/docs/Azure_cloud/Outer_Architecture",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/markdown-features",
-              "path": "/docs/tutorial-basics/markdown-features",
+              "id": "Image_Recorgnition/multiple_object_detecting",
+              "path": "/docs/Image_Recorgnition/multiple_object_detecting",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "id": "Image_Recorgnition/object_tracking",
+              "path": "/docs/Image_Recorgnition/object_tracking",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
+              "id": "/category/azure_cloud",
+              "path": "/docs/category/azure_cloud",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/tutorial---basics",
-              "path": "/docs/category/tutorial---basics",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
+              "id": "/category/image_recorgnition",
+              "path": "/docs/category/image_recorgnition",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -70,8 +65,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
-                "label": "intro"
+                "path": "/docs/category/azure_cloud",
+                "label": "Azure_cloud"
               }
             }
           }

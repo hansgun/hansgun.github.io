@@ -1,0 +1,23 @@
+{
+  "id": "Azure_cloud/Inner_Architecture",
+  "title": "0. 개요",
+  "description": "- cloud native application 개발 간 정리 / 적용한 원칙 및 시스템 구현에 관한 내용 및 체크 사항등을 나열한 문서임",
+  "source": "@site/docs/Azure_cloud/03.Inner_Architecture.md",
+  "sourceDirName": "Azure_cloud",
+  "slug": "/Azure_cloud/Inner_Architecture",
+  "permalink": "/docs/Azure_cloud/Inner_Architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Azure_cloud/03.Inner_Architecture.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "0. 개요",
+    "permalink": "/docs/Azure_cloud/Outer_Architecture"
+  }
+}

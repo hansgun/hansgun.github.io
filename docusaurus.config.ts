@@ -7,7 +7,7 @@ import rehypeKatex from 'rehype-katex';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Han\'s blog',
+  title: 'Han\'s',
   tagline: 'Life are cool',
   // favicon: 'img/favicon.ico',
   favicon: 'img/imo.ico',
@@ -70,8 +70,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -88,20 +88,21 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Hans\'s blog',
+      title: 'Han\'s',
       logo: {
         alt: 'My Site Logo',
         src: 'img/imos.png',
       },
       items: [
-        // {
-          // type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        { to: "/archive", label: "Archive", position: "left" },
+        // {to: '/', label: 'Blog', position: 'left'},
+        {
+          to: '/docs',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Docs',
+        },
+        { to: "/archive", label: "All-BLogs", position: "left" },
         {
           href: 'https://github.com/hansgun',
           label: 'GitHub',
@@ -116,10 +117,15 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['java', 'bash','hcl','yaml','python'],
+      additionalLanguages: [
+        'yaml',
+        'java', 
+        'bash',
+        'hcl',
+        'python'],
     },
     colorMode: {
-      defaultMode: "light",
+      // defaultMode: "",
       respectPrefersColorScheme: true,
     }
   } satisfies Preset.ThemeConfig,

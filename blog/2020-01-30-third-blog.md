@@ -3,7 +3,7 @@ layout: post
 #classes: wide
 title: "Set up project dev environments"
 date: 2019-01-29 00:16:01 -0600
-tags: [dev]
+# tags: [dev]
 toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
