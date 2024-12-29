@@ -102,7 +102,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        { to: "/archive", label: "All-BLogs", position: "left" },
+        { to: "/archive", label: "Blog-Archive", position: "left" },
         {
           href: 'https://github.com/hansgun',
           label: 'GitHub',
