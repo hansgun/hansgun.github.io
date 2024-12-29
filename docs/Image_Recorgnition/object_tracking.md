@@ -33,9 +33,12 @@ tracking을 위한 모델은 **instance segmentation이 가능한 모델 활용*
 
 분만 판정은 **piglet의 형태 정보와 위치 정보를 기반**으로 일정 시간 내 기준치 이상 관찰되어야 분만으로 판단함. 예를 들어 2초(48 frame) 내 유효 카운트 이상의 frame에서 piglet이 관찰되고, frame 간 그 중심 좌표가 사전 학습한 piglet의 활동 범위내에 위치하고 있어야 한다.
 
-![https://youtu.be/LuA3lZ5gvYM](https://youtu.be/LuA3lZ5gvYM)
-
-  
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/LuA3lZ5gvYM" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
 
 ## 나. 활동성 감지
 
@@ -170,7 +173,7 @@ grid 분할 시에는 세분화된 결과를 낼 수 있으므로, 정확도가 
   ![밀도1.png](./img/밀도1.png)
   ![밀도2.png](./img/밀도2.png)
   
-**3-4. B농장 결과(’22/11/23 ~ 12/05)**
+<!-- **3-4. B농장 결과(’22/11/23 ~ 12/05)** -->
 
 참조 문서
 
