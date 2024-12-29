@@ -16,7 +16,7 @@ sidebar_position: 2
 | Hub   | hub-sub     | 공통  | On-prem 시스템 및 내부 시스템 연계대외 서비스 출입 게이트웨이 | 1022               | ER Circuit/ER GatewayWAF, FirewallApp. Gateway                     |                              |
 | Spoke | prd-sub     | 운영  | 운영 전용 워크로드                                 | 2046               | Cluster(k8s)Backing Service(DB, storage, secret ... etc)               | AKSDBRedis, Eventhub |
 |       | stg/dev-sub | 개발  | STG,DEV 워크로드                               | 2046               | 상동                                                                         |                              |
-|       | shared-sub  | 공통  | 공통 자원                                      | 510(운영)254(개발) | DevOps self-hostedAPIMGithub Enterprise(as source version control) |                              |
+|       | shared-sub  | 공통  | 공통 자원                                      | 510(운영) \254(개발) | DevOps self-hostedAPIMGithub Enterprise(as source version control) |                              |
 <!-- ![[스크린샷 2024-03-29 오후 9.34.43.png]]![[스크린샷 2024-03-29 오후 9.34.59.png]] -->
 
 ## 1-1. 워크로드 영역의 Cloud Service
