@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Hello World!"
+title: "Moved!"
 category: work 
 ---
 
 Hello !
 
-어제(24.12.28) 이사왔어요!!
+Jekyll 에서 어제(24.12.28) 이사왔어요!!
 
 <!-- truncate -->
