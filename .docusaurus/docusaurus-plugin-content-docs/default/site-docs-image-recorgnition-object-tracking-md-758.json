@@ -1,6 +1,6 @@
 {
   "id": "Image_Recorgnition/object_tracking",
-  "title": "object_tracking",
+  "title": "02. object_tracking",
   "description": "개체 추적 기술은 개체 감지 기술의 응용버전이다. 개별 감지 결과를 sequential 하게 연결하여 object의 상태 변화를 데이터화 하는 방법이다. 특히 연속된 이미지(이미지를 frame으로 삼는 영상)에서 개체의 위치 정보를 위치의 변동이 없는 배경과 비교한 물리데이터를 추출하여 motion 분석으로 활용하는 기술이 개체 추적이다. 구체적인 task 로는 egomotion, optical flow, tracking 등이 있다. 실제 task의 구분은 모호할 수 있으며, 목적에 따라 여러 기법이 합성된 형태로 적용되기도 한다.",
   "source": "@site/docs/Image_Recorgnition/object_tracking.md",
   "sourceDirName": "Image_Recorgnition",
@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "multiple_object_detecting",
+    "title": "01. multiple_object_detecting",
     "permalink": "/docs/Image_Recorgnition/multiple_object_detecting"
   }
 }

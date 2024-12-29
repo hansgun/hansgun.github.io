@@ -169,15 +169,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '1a9'),
+    component: ComponentCreator('/docs', '677'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '838'),
+        component: ComponentCreator('/docs', '757'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'c9f'),
+            component: ComponentCreator('/docs', '08c'),
             routes: [
               {
                 path: '/docs/Azure_cloud/AWS_Azure',
@@ -216,14 +216,14 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/category/azure_cloud',
-                component: ComponentCreator('/docs/category/azure_cloud', '4da'),
+                path: '/docs/category/a-azure_cloud',
+                component: ComponentCreator('/docs/category/a-azure_cloud', '6ba'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/category/image_recorgnition',
-                component: ComponentCreator('/docs/category/image_recorgnition', 'b64'),
+                path: '/docs/category/b-image_recorgnition',
+                component: ComponentCreator('/docs/category/b-image_recorgnition', '35d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

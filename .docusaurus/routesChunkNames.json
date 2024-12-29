@@ -368,17 +368,17 @@
     ],
     "__props": "__props---tags-tempo-650-83a"
   },
-  "/docs-1a9": {
+  "/docs-677": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-838": {
+  "/docs-757": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-c9f": {
+  "/docs-08c": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/Azure_cloud/AWS_Azure-9a6": {
@@ -405,13 +405,13 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-azure-cloud-outer-architectureac-1-99f"
   },
-  "/docs/category/azure_cloud-4da": {
+  "/docs/category/a-azure_cloud-6ba": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-azure-cloudf-62-31a"
+    "__props": "__props---docs-category-a-azure-cloud-398-94d"
   },
-  "/docs/category/image_recorgnition-b64": {
+  "/docs/category/b-image_recorgnition-35d": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-image-recorgnition-954-7b5"
+    "__props": "__props---docs-category-b-image-recorgnitionffe-9e8"
   },
   "/docs/Image_Recorgnition/multiple_object_detecting-a5d": {
     "__comp": "__comp---theme-doc-item-178-a40",

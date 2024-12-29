@@ -1,6 +1,6 @@
 {
   "id": "Image_Recorgnition/multiple_object_detecting",
-  "title": "multiple_object_detecting",
+  "title": "01. multiple_object_detecting",
   "description": "가. 개 요",
   "source": "@site/docs/Image_Recorgnition/multiple_object_detecting.md",
   "sourceDirName": "Image_Recorgnition",
@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Image_Recorgnition",
-    "permalink": "/docs/category/image_recorgnition"
+    "title": "B. Image_Recorgnition",
+    "permalink": "/docs/category/b-image_recorgnition"
   },
   "next": {
-    "title": "object_tracking",
+    "title": "02. object_tracking",
     "permalink": "/docs/Image_Recorgnition/object_tracking"
   }
 }

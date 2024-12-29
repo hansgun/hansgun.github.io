@@ -51,13 +51,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/azure_cloud",
-              "path": "/docs/category/azure_cloud",
+              "id": "/category/a-azure_cloud",
+              "path": "/docs/category/a-azure_cloud",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/image_recorgnition",
-              "path": "/docs/category/image_recorgnition",
+              "id": "/category/b-image_recorgnition",
+              "path": "/docs/category/b-image_recorgnition",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -65,8 +65,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/category/azure_cloud",
-                "label": "Azure_cloud"
+                "path": "/docs/category/a-azure_cloud",
+                "label": "A. Azure_cloud"
               }
             }
           }
