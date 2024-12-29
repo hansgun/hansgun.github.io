@@ -12,7 +12,7 @@ sidebar_position: 3
 
 
 >[!quote] 
-> 클라우드向 어플리케이션 설계 지향점인 **12 Factor App 설계 원칙** 준용([https://12factor.net]) 
+> 클라우드向 어플리케이션 설계 지향점인 **12 Factor App 설계 원칙** 준용 [12-factors](https://12factor.net)
  
 
 | No. | 기본원칙                                                                                  | 아키텍처 적용 방안(예)                                                                                   |
