@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Azure_cloud/AWS_Azure" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">06. AWS , Azure | Han&#x27;s</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://hansgun.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://hansgun.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://hansgun.github.io/docs/Azure_cloud/AWS_Azure"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="06. AWS , Azure | Han&#x27;s"><meta data-rh="true" name="description" content="- 리소스, 사용자 권한 등을 관리하기 위한 표준 등을 크게 4 가지로 구분할 수 있으며, 각 CSP에서 제공하는 서비스는 다음과 같다."><meta data-rh="true" property="og:description" content="- 리소스, 사용자 권한 등을 관리하기 위한 표준 등을 크게 4 가지로 구분할 수 있으며, 각 CSP에서 제공하는 서비스는 다음과 같다."><link data-rh="true" rel="icon" href="/img/imo.ico"><link data-rh="true" rel="canonical" href="https://hansgun.github.io/docs/Azure_cloud/AWS_Azure"><link data-rh="true" rel="alternate" href="https://hansgun.github.io/docs/Azure_cloud/AWS_Azure" hreflang="en"><link data-rh="true" rel="alternate" href="https://hansgun.github.io/docs/Azure_cloud/AWS_Azure" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Han&#39;s RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Han&#39;s Atom Feed">
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.0f128cca.css">
+<script src="/assets/js/runtime~main.7b6c0e80.js" defer="defer"></script>
+<script src="/assets/js/main.152256ed.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/imos.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/imos.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Han&#x27;s</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/category/azure_cloud">Docs</a><a class="navbar__item navbar__link" href="/archive">All-BLogs</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/hansgun" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/azure_cloud">Azure_cloud</a><button aria-label="Collapse sidebar category &#x27;Azure_cloud&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Azure_cloud/Introduction">01. Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Azure_cloud/Outer_Architecture">02. Outer_Architecture</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Azure_cloud/Inner_Architecture">03. Inner_Architecture</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Azure_cloud/CI_CD">04. CI/CD</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Azure_cloud/AWS_codecommit">05. AWS commit message - Azure DevOps Board 연동</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/Azure_cloud/AWS_Azure">06. AWS , Azure</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/image_recorgnition">Image_Recorgnition</a><button aria-label="Expand sidebar category &#x27;Image_Recorgnition&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/azure_cloud"><span itemprop="name">Azure_cloud</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">06. AWS , Azure</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>06. AWS , Azure</h1></header>
+<h1>1. Cloud Gevernance</h1>
+<ul>
+<li>리소스, 사용자 권한 등을 관리하기 위한 표준 등을 크게 4 가지로 구분할 수 있으며, 각 CSP에서 제공하는 서비스는 다음과 같다.</li>
+</ul>
+<table><thead><tr><th>구분</th><th>Azure</th><th>AWS</th></tr></thead><tbody><tr><td>리소스 계층 표준</td><td>- Management Group - Subscription- Resource Group</td><td>- AWS Organization- AWS Account</td></tr><tr><td>리소스 관리 표준</td><td>Azure Policy</td><td>AWS Config</td></tr><tr><td>사용자 역할 표준</td><td>Azure User, Group\Azure RBAC</td><td>AWS IAM Role, Policy</td></tr><tr><td>표준 명명 규칙</td><td>Naming Convention\Resource Tag</td><td>AWS Tag</td></tr></tbody></table>
+<h1>2. Hierarchy 비교</h1>
+<table><thead><tr><th>구분</th><th>Azure</th><th>AWS</th></tr></thead><tbody><tr><td>공통관리</td><td>공통영역(보안/전용선, 서비스 공통)은 Hub-Spoke 구조에서 Hub, Shared subscription을 활용하여 서비스 subscription에 연결되는 형태</td><td>전체 공유 서비스 및 통합 관리 용도의 common Account 구성</td></tr><tr><td>서비스 확장</td><td>서비스 확장 시 성격에 따라 subscription 추가하는 형태</td><td>각 서비스 환경 별로 사용하는 용도의 Service Account 구성</td></tr></tbody></table>
+<h1>3. CSP 별 관리 구조</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-1-azure">3-1. Azure<a href="#3-1-azure" class="hash-link" aria-label="Direct link to 3-1. Azure" title="Direct link to 3-1. Azure">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-1-1-개요">3-1-1. 개요<a href="#3-1-1-개요" class="hash-link" aria-label="Direct link to 3-1-1. 개요" title="Direct link to 3-1-1. 개요">​</a></h3>
+<ul>
+<li>공통 외 서비스 성격에 따른 관리그룹(Management Group) 구분 후, 관리 그룹별 관련 subscription을 포함하여 접근 및 정책 제어<!-- -->
+<ul>
+<li>관리 그룹에 속한 하위 구독은 관리 그룹에 적용되는 조건을 상속함</li>
+<li>관리 그룹은 공통 외 서비스 성격 별로 추가 구분함</li>
+<li>보안, 네트워크 공통 영역와 서비스 공통 영역을 각각 Hub 와 Shared 구독으로 구분함</li>
+<li>spoke 구독은 서비스별, 환경별(prd, stg, dev)로 구분함</li>
+<li>서비스 단위 별로 리소스 그룹을 구분 함</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-1-2-세부-내용">3-1-2. 세부 내용<a href="#3-1-2-세부-내용" class="hash-link" aria-label="Direct link to 3-1-2. 세부 내용" title="Direct link to 3-1-2. 세부 내용">​</a></h3>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="사용자-역할-별-구분">사용자 역할 별 구분<a href="#사용자-역할-별-구분" class="hash-link" aria-label="Direct link to 사용자 역할 별 구분" title="Direct link to 사용자 역할 별 구분">​</a></h5>
+<ul>
+<li>리소스에 대한 RBAC(Role Based Access Control) 권한을 <del>Azure AD Group</del> MS Entra ID 생성 및 Owner를 지정하여 멤버 관리</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="자원-naming-convention">자원 Naming Convention<a href="#자원-naming-convention" class="hash-link" aria-label="Direct link to 자원 Naming Convention" title="Direct link to 자원 Naming Convention">​</a></h5>
+<p><code>&lt;service-name&gt; - &lt;env&gt; - &lt;azure service name&gt; &lt;##&gt;</code></p>
+<ol>
+<li>명명은 모두 소문자 활용</li>
+<li><code>-</code> 을 제외한 특수 문자나 스페이스는 허용되지 않음<!-- -->
+<ol>
+<li>Azure 리소스의 명명 규칙은 리소스마다 다르기 때문에 그 특성에 맞게 규칙을 사용
+a. 대부분의 리소스는 영문 대소문자, 하이픈이 허용되는 경우이며, 아래와 같은 패턴을 기본 규칙으로 한다.
+<code>&lt;서비스명&gt;-&lt;환경&gt;-&lt;Azure 서비스명&gt;&lt;##&gt;</code>
+b. Subscription과 같이 <em>글로벌 서비스인 경우</em> 아래와 같은 패턴을 기본 규칙으로 한다.
+<code>&lt;회사명&gt;&lt;서비스명&gt;-&lt;환경&gt;-&lt;Azure 서비스명&gt;&lt;##&gt;</code> (규칙 범위가 글로벌 서비스인 경우 회사명을 추가한다. )
+c. Storage Account와 같이 <em>하이픈이 허용되지 않는 경우</em>  아래와 같이 하이픈을 제공하는 패턴을 기본으로 한다.
+<code>&lt;회사명&gt;&lt;서비스명&gt;&lt;환경&gt;&lt;Azure 서비스명&gt;&lt;##&gt;</code>
+d. Virtual Machine, Load Balancer와 같이 <em>용도(Web, DB)등을 구분해야 하는 경우</em> , 아래와 같은 패턴을 기본 규칙으로 한다.
+<code>&lt;회사명&gt;&lt;서비스명&gt;-&lt;환경&gt;-&lt;용도&gt;-&lt;Azure 서비스명&gt;&lt;##&gt;</code>
+e. Disk, Subnet과 같이 <em>어느 서비스에 종속</em> 되는 경우, 아래와 같은 패턴을 기본 규칙으로 한다.
+<code>종속되어 있는 서비스의 명명 규칙 + &lt;용도&gt; + &lt;Azure 서비스명&gt;&lt;##&gt;</code> (Subnet 처럼 용도가 필요한 경우 용도를 추가한다. )</li>
+</ol>
+</li>
+<li>각 항목은 사전에 정의된 리소스 명명 혹은 약어를 사용해야 한다.</li>
+<li>Azure 리소스 명칭을 자동으로 부여하는 경우가 있기 때문에, 이 경우에는 Tagging을 활용한다.</li>
+<li>Tagging</li>
+</ol>
+<table><thead><tr><th>적용</th><th>태그 이름</th><th>Key</th><th>설명</th><th>예제 값</th></tr></thead><tbody><tr><td>필수</td><td>어플리케이션 이름</td><td>ApplicationName</td><td>어플리케이션 명</td><td></td></tr><tr><td>필수</td><td>환경</td><td>env</td><td>서비스 배포 환경</td><td>prd, stg, dev, poc</td></tr></tbody></table>
+<blockquote>
+<p>[!tip] 리소스 태깅 시 고려사항</p>
+<ul>
+<li>하나의 리소스 또는 리소스 그룹은 최대 15개의 태그 정의 가능</li>
+<li>각 리소스 , 리소스 그룹에는 50개의 Tag 키/값 쌍을 구성할 수 있음</li>
+<li>태그 이름은 대/소문자를 구분하지 않는다.</li>
+</ul>
+</blockquote>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="리소스-관리-표준azure-policy">리소스 관리 표준(Azure Policy)<a href="#리소스-관리-표준azure-policy" class="hash-link" aria-label="Direct link to 리소스 관리 표준(Azure Policy)" title="Direct link to 리소스 관리 표준(Azure Policy)">​</a></h5>
+<table><thead><tr><th>No.</th><th>Policy 이름</th><th>내 용</th><th>비고</th></tr></thead><tbody><tr><td>1</td><td>inherit a tag from the resource group(Appl.)</td><td>리소스 그룹에서 리소스로 태그를 자동으로 상속한다.</td><td>필수 적용 Tag : 애플리케이션</td></tr><tr><td>2</td><td>inherit a tag from the resource group(Env.)</td><td>리소스 그룹에서 리소스로 태그를 자동으로 상속한다.</td><td>필수 적용 Tag : 환경</td></tr><tr><td>3</td><td>PublicIP Create Deny</td><td>Public IP의 생성을 막도록 강제하는 Custom Policy</td><td></td></tr><tr><td>4</td><td>Audits usage of custom RBAC rules</td><td>소유자, 기여자, reader와 같은 Built-in Role 이 아닌 Custom Role을 만드는 것을 감시</td><td></td></tr><tr><td>5</td><td>Audits VMs that do not use managed disks</td><td>관리 디스크를 사용하지 않는 VM을 감시</td><td></td></tr><tr><td>6</td><td>Secure transfer to storage accounts should be enalbed</td><td>Storage Account의 Secure Transfer를 사용하는 지 감사 \Secure Transfer는 Storage Account가 HTTPS의 요청만 수락하도록 강제하는 옵션. HTTPS를 사용하면 서버와 서비스 간의 인증이 보장되고 중간 관리자, 도청 및 세션 하이잭킹과 같은 네트워크 계층 공격으로부터 데이터 보호 가능</td><td></td></tr><tr><td>7</td><td>MFA shoud be enabeld on accounts with owner permission on subscription</td><td>계정 또는 리소스의 침해를 방지하기 위해, 소유자 권한이 있는 모든 구독 계정에 대해 MFA를 사용하는 지 감사</td><td></td></tr><tr><td>8</td><td>A maximum of 3 owners should be designed for subscription</td><td>유출된 소유자에 의한 침해 가능성을 줄이기 위해 최대 3명의 구독 소유자를 지정하는 권고. Subscription Owner 의 수를 감사</td><td>3명 초과시 비준수</td></tr><tr><td>9</td><td>Allowed locations</td><td>리소스를 배포할 때 조직에서 지정할 수 있는 위치를 제한할 수 있다.</td><td></td></tr><tr><td>10</td><td>Network interfaces should not have public IPs</td><td>공용 IP 주소를 사용하면 인터넷 리소스가 Azure 리소스로 인바운드 및 Azure 리소스는 인터넷으로 아웃바운드 통신할 수 있기 때문에, 공용 IP로 구성된 네트워크 인터페이스를 거부</td><td></td></tr></tbody></table>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="isms-준수를-위한-표준-추가">ISMS 준수를 위한 표준 추가<a href="#isms-준수를-위한-표준-추가" class="hash-link" aria-label="Direct link to ISMS 준수를 위한 표준 추가" title="Direct link to ISMS 준수를 위한 표준 추가">​</a></h5>
+<table><thead><tr><th>No.</th><th>Policy이름</th><th>내용</th><th>효과</th><th>ISMS 통제항목(기술적 관리조치)</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-2-aws">3-2. AWS<a href="#3-2-aws" class="hash-link" aria-label="Direct link to 3-2. AWS" title="Direct link to 3-2. AWS">​</a></h2>
+<ul>
+<li>리소스 권한 관리 및 비용 관리 투명성을 위해, 추가 서비스 구축 시 Service 단위 운영/개발 Account 별도 생성</li>
+<li><strong>Common Account</strong> : 전체 서비스와 공유하는 리소스, 통합 관리 리소스<!-- -->
+<ul>
+<li>IAM 사용자 및 그룹 관리</li>
+<li>TGW 연동 및 Public 트래픽 감시 통합 관리</li>
+<li>CI/CD 관리</li>
+<li>3rd party 보안 리소스 배포 및 관리</li>
+<li>각 Acoount 의 Audit 로그 통합 관리</li>
+</ul>
+</li>
+<li><strong>Service Account</strong> : 각 서비스에서 사용하는 리소스 배포 환경별 분리<!-- -->
+<ul>
+<li>Prod, Dev, DW 등으로 구분</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-2-1-사용자-역할-표준iam-role-policy">3-2-1. 사용자 역할 표준(IAM Role, Policy)<a href="#3-2-1-사용자-역할-표준iam-role-policy" class="hash-link" aria-label="Direct link to 3-2-1. 사용자 역할 표준(IAM Role, Policy)" title="Direct link to 3-2-1. 사용자 역할 표준(IAM Role, Policy)">​</a></h3>
+<ul>
+<li>각 Account에 적용할 IAM Group을 구분하고 Account 마다 생성된 Role 기반으로 역할 전환을 할 수 있도록 구성. Group은 조직의 역할 단위를 나누고 Access Key 사용 계정의 경우 별도 Group으로 키 생성하도록 함</li>
+<li><em>리소스 관리 표준(AWS Config)</em> : 모든 Account에 Config Rule을 적용하고, Common Account  의 Dashboard 및 알림을 통해 통합 Gorvernance 확보, ISMS 인증 준수를 위한 Rule 포함 Rule 적용</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="naming-표준">Naming 표준<a href="#naming-표준" class="hash-link" aria-label="Direct link to Naming 표준" title="Direct link to Naming 표준">​</a></h5>
+<ul>
+<li>Naming Convention은 AWS Resource를 체계적으로 관리하기 위한 기준으로, 표준으로 정의한 기준에 따라 수립하고 수정</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="리소스-태그tagging">리소스 태그(Tagging)<a href="#리소스-태그tagging" class="hash-link" aria-label="Direct link to 리소스 태그(Tagging)" title="Direct link to 리소스 태그(Tagging)">​</a></h5>
+<ul>
+<li>필수 Tag 항목</li>
+</ul>
+<table><thead><tr><th>필수항목</th><th>Tag Key</th><th>Tag value(예시)</th><th>Tag 활용 목적</th></tr></thead><tbody><tr><td>리소스명</td><td>cz-name</td><td>datalake-p-vpc-</td><td>리소스 식별 목적으로 사용 \태그 그룹 기능은 지원하지 않되, Asset 태그정보 제공</td></tr><tr><td>프로젝트</td><td>cz-project</td><td>datalake, 프로젝트 코드</td><td>자원을 소유하는 프로젝트 식별</td></tr><tr><td>팀/조직명</td><td>cz-org</td><td>ops_tf, 운영_tf</td><td>자원을 소유/운영하는 조직 식별</td></tr><tr><td>운영환경</td><td>cz-stage</td><td>product, staging, dev</td><td>해당 리소스의 서비스 환경을 특성으로 구분</td></tr><tr><td>운영소유자</td><td>cz-owner</td><td>홍길동</td><td>자원을 운영 또는 Ownership을 가진 사용자명</td></tr><tr><td>Application명</td><td>cz-msp</td><td>hr, mis, portal</td><td>사용 목적에 따라 자유롭게 정의할 수 있는 태그\</td></tr><tr><td>사용자 정의 태그1</td><td>cz-owner2</td><td></td><td></td></tr><tr><td>사용자 정의 태그2</td><td></td><td></td><td></td></tr><tr><td>사용자 정의 태그3</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table>
+<ul>
+<li>허용 문자 : 영문 소문자, 한글, 숫자</li>
+<li>허용 특수 문자: <code>_</code>, <code>-</code></li>
+<li>Tag key, value 문자 길이 : 최대 63글자</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-2-1-openstack-관련기능">3-2-1. Openstack 관련기능<a href="#3-2-1-openstack-관련기능" class="hash-link" aria-label="Direct link to 3-2-1. Openstack 관련기능" title="Direct link to 3-2-1. Openstack 관 련기능">​</a></h3>
+<table><thead><tr><th>컴포넌트</th><th>기능</th></tr></thead><tbody><tr><td>Horizon</td><td>서비스 포털</td></tr><tr><td>Nova</td><td>컴퓨팅 리소스 관리</td></tr><tr><td>Neutron</td><td>가상 네트워크 기능</td></tr><tr><td>Cinder, Swift</td><td>가상 스토리지 기능(BLOB, Object Storage)</td></tr><tr><td>Keystone</td><td>통합 인증 기능</td></tr></tbody></table></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Azure_cloud/AWS_Azure.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/Azure_cloud/AWS_codecommit"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">05. AWS commit message - Azure DevOps Board 연동</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/category/image_recorgnition"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Image_Recorgnition</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#3-1-azure" class="table-of-contents__link toc-highlight">3-1. Azure</a><ul><li><a href="#3-1-1-개요" class="table-of-contents__link toc-highlight">3-1-1. 개요</a></li><li><a href="#3-1-2-세부-내용" class="table-of-contents__link toc-highlight">3-1-2. 세부 내용</a></li></ul></li><li><a href="#3-2-aws" class="table-of-contents__link toc-highlight">3-2. AWS</a><ul><li><a href="#3-2-1-사용자-역할-표준iam-role-policy" class="table-of-contents__link toc-highlight">3-2-1. 사용자 역할 표준(IAM Role, Policy)</a></li><li><a href="#3-2-1-openstack-관련기능" class="table-of-contents__link toc-highlight">3-2-1. Openstack 관련기능</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

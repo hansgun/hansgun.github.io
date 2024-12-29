@@ -17,7 +17,7 @@ sidebar_position: 2
 | Spoke | prd-sub     | 운영  | 운영 전용 워크로드                                 | 2046               | Cluster(k8s)Backing Service(DB, storage, secret ... etc)               | AKSDBRedis, Eventhub |
 |       | stg/dev-sub | 개발  | STG,DEV 워크로드                               | 2046               | 상동                                                                         |                              |
 |       | shared-sub  | 공통  | 공통 자원                                      | 510(운영)254(개발) | DevOps self-hostedAPIMGithub Enterprise(as source version control) |                              |
-![[스크린샷 2024-03-29 오후 9.34.43.png]]![[스크린샷 2024-03-29 오후 9.34.59.png]]
+<!-- ![[스크린샷 2024-03-29 오후 9.34.43.png]]![[스크린샷 2024-03-29 오후 9.34.59.png]] -->
 
 ## 1-1. 워크로드 영역의 Cloud Service
 | 분류                | 자원명(Azure)       | 용도                                              | spec       | 비고                                                                     |
@@ -29,7 +29,7 @@ sidebar_position: 2
 
 > **Azure Database for PostgreSQL**
 
-![[스크린샷 2024-03-30 오후 9.38.08.png]]
+<!-- ![[스크린샷 2024-03-30 오후 9.38.08.png]] -->
 ## 1-2. Shared Sub 및 Azure DevOps
 | 분류      | 자원명                      | Azure Service | 용도                   | spec      | 비고                              |
 | ------- | ------------------------ | ------------- | -------------------- | --------- | ------------------------------- |
@@ -60,7 +60,7 @@ sidebar_position: 2
 >4. CD 작업을 위해 AKS 접속하여 배포 명령 실행
 >5. ACR에 접속하여 이미지 Pull 및 배포 수행
 
-![[스크린샷 2024-03-29 오후 9.40.15.png]]
+<!-- ![[스크린샷 2024-03-29 오후 9.40.15.png]] -->
 ## 2-1. 모니터링
 - streaming 된 log는 App Insight 를 통하여 수집되면 Azure Portal을 통해 확인 가능. RBAC 으로 권한 관리 
 ## 2-2. AD SSO 연계 
@@ -95,11 +95,11 @@ sidebar_position: 2
 			--zone 1 2 3
 ```
 ### 2-3-2. AKS 애플리케이션 노출 및 load balancing 방안
-![[스크린샷 2024-03-29 오후 9.45.28.png]]
-![[스크린샷 2024-03-30 오후 10.11.43.png]]
+<!-- ![[스크린샷 2024-03-29 오후 9.45.28.png]]
+![[스크린샷 2024-03-30 오후 10.11.43.png]] -->
 
 ### 2-3-3. External data stores 구성
-![[스크린샷 2024-03-29 오후 9.42.09.png]]
+<!-- ![[스크린샷 2024-03-29 오후 9.42.09.png]] -->
 #### 스토리지 구성 방안 
 >
 >- AKS 내 단일 App 내의 Microservice는 동일한 데이터 볼륨을 공유할 수 있어야 한다. 
@@ -112,15 +112,15 @@ sidebar_position: 2
 		2. Static 방식 : 데이터 볼륨을 수동으로 만들어 Pod에 할당하는 방식
 		3. _비교_ : Dynamic 방식은 Storage account 와 pv가 자동 생성된다는 장점이 있으나 네이밍이 16진수 코드로 된 임의의 스트링으로 생성되어 운영 관리 용이성이 떨어짐 
 
-![[스크린샷 2024-03-29 오후 9.42.38.png]]
+<!-- ![[스크린샷 2024-03-29 오후 9.42.38.png]]
 
 ![[스크린샷 2024-03-29 오후 9.59.26.png]]
 
 ![[스크린샷 2024-03-30 오후 10.19.23.png]]
-![[스크린샷 2024-03-30 오후 10.20.24.png]]
+![[스크린샷 2024-03-30 오후 10.20.24.png]] -->
 
 ### 2-3.4. AKS 내 Microservice 배포
-![[스크린샷 2024-03-30 오후 10.21.37.png]]![[스크린샷 2024-03-30 오후 10.22.17.png]]
+<!-- ![[스크린샷 2024-03-30 오후 10.21.37.png]]![[스크린샷 2024-03-30 오후 10.22.17.png]] -->
 
 ### 2-3-5. Jumpbox를 통한 AKS 계정별 권한 관리 
 - VM의 계정별 kube 설정
@@ -128,7 +128,7 @@ sidebar_position: 2
 	2. Service account 생성 및 Rolebinding 
 	3. 각 Service Account 별 token으로 config 파일 생성하여 OS 계정 별로 세팅 : ~/.kube/config 
 - 미리 정의된 권한은 ClusterRole에 cluster-admin, admin, edit, view가 있으며, binding 하는 종류(Rolebinding, ClusterRolebinding)에 따라 권한 접근 범위가 namespace 인지 cluster 전체인지가 결정된다. 
-![[스크린샷 2024-03-29 오후 9.46.36.png]]
+<!-- ![[스크린샷 2024-03-29 오후 9.46.36.png]] -->
 
 # 3. 로깅 및 모니터링
 ## 3-1. Azure Application Insight Agent 및 설정 파일 주입 방법

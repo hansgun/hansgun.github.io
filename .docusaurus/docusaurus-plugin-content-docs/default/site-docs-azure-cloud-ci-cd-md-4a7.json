@@ -1,0 +1,27 @@
+{
+  "id": "Azure_cloud/CI_CD",
+  "title": "04. CI/CD",
+  "description": "",
+  "source": "@site/docs/Azure_cloud/CI_CD.md",
+  "sourceDirName": "Azure_cloud",
+  "slug": "/Azure_cloud/CI_CD",
+  "permalink": "/docs/Azure_cloud/CI_CD",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Azure_cloud/CI_CD.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "03. Inner_Architecture",
+    "permalink": "/docs/Azure_cloud/Inner_Architecture"
+  },
+  "next": {
+    "title": "05. AWS commit message - Azure DevOps Board 연동",
+    "permalink": "/docs/Azure_cloud/AWS_codecommit"
+  }
+}
