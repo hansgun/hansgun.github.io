@@ -16,14 +16,14 @@ sidebar_position: 2
 | Hub   | hub-sub     | 공통  | On-prem 시스템 및 내부 시스템 연계대외 서비스 출입 게이트웨이 | 1022               | ER Circuit/ER GatewayWAF, FirewallApp. Gateway                     |                              |
 | Spoke | prd-sub     | 운영  | 운영 전용 워크로드                                 | 2046               | Cluster(k8s)Backing Service(DB, storage, secret ... etc)               | AKSDBRedis, Eventhub |
 |       | stg/dev-sub | 개발  | STG,DEV 워크로드                               | 2046               | 상동                                                                         |                              |
-|       | shared-sub  | 공통  | 공통 자원                                      | 510(운영) \254(개발) | DevOps self-hostedAPIMGithub Enterprise(as source version control) |                              |
+|       | shared-sub  | 공통  | 공통 자원                                      | 510(운영) <br/> 254(개발) | DevOps self-hostedAPIMGithub Enterprise(as source version control) |                              |
 <!-- ![[스크린샷 2024-03-29 오후 9.34.43.png]]![[스크린샷 2024-03-29 오후 9.34.59.png]] -->
 
 ## 1-1. 워크로드 영역의 Cloud Service
 | 분류                | 자원명(Azure)       | 용도                                              | spec       | 비고                                                                     |
 | ----------------- | ---------------- | ----------------------------------------------- | ---------- | ---------------------------------------------------------------------- |
-| K8s               | AKS              | 서비스 워크로드                                        | 3 nodes    | -Load Balancer:서비스노출 연계 -KeyVault: 환경변수-Storage Account:공용스토리지 |
-| MessageBroker | Event Hubs       | -App Service의 Event Pub/Sub-CDC 데이터 Pub/Sub | Premium    | Private Link 구성                                                        |
+| K8s               | AKS              | 서비스 워크로드                                        | 3 nodes    | -Load Balancer:서비스노출 연계 <br/>-KeyVault: 환경변수-Storage Account:공용스토리지 |
+| MessageBroker | Event Hubs       | -App Service의 Event Pub/Sub<br/>-CDC 데이터 Pub/Sub | Premium    | Private Link 구성                                                        |
 | DB                | Azure PostgreSQL | 표준 RDBMSlegacy Oracle과의 호환성(Heap table)     | 2 Flexible | DB subnet 구성Private Link 연결                                        |
 | CDC               | Kafka Connect    | On-prem. Oracle과 Cloud PostgreSQL 동기화           | VM         | OSS를 활용 자체 개발(Kafka Connect, Debezium)                                 |
 
@@ -33,8 +33,8 @@ sidebar_position: 2
 ## 1-2. Shared Sub 및 Azure DevOps
 | 분류      | 자원명                      | Azure Service | 용도                   | spec      | 비고                              |
 | ------- | ------------------------ | ------------- | -------------------- | --------- | ------------------------------- |
-| DevOps  | Github Ent.              | VM            | 소스코드 저장소             | 1 VM      | -설치형-라이선스 별도 구매             |
-|         | self-hosted Agent        | VM            | 빌드 및 배포 서버           | 1 VM      | -설치형-Organization별 추가 설치 필요 |
+| DevOps  | Github Ent.              | VM            | 소스코드 저장소             | 1 VM      | -설치형<br/>-라이선스 별도 구매             |
+|         | self-hosted Agent        | VM            | 빌드 및 배포 서버           | 1 VM      | -설치형<br/>-Organization별 추가 설치 필요 |
 |         | Azure Container Registry | PaaS          | 이미지 저장소              | Premium   | -Private Link 구성                |
 | JumpBox | Jumpbox Linux            | VM            | AKS, VM 관리 접속 호스트    | linux 1VM |                                 |
 |         | Jumpbox Win.             | VM            | 자원관리용 접속 호스트         | Win 1VM   |                                 |
@@ -76,7 +76,7 @@ sidebar_position: 2
 	- AKS에 대한 자격 증명과 AKS가 위치하는 Vnet 내부 또는 Peering 된 통신 가능한 장소에서만 접근 가능. 
 ### 2-3-2. AZ 구성
 - AKS의 Compute 는 가용성을 고려하여 최소 2개의 노드를 배포하며, 3개 이상의 노드가 권장사항임. 각 노드는 VMSS에 매핑하여 AZ를 고려하여 구성함 
-- \[사용자 노드 풀의 고려사항\]
+- 사용자 노드 풀의 고려사항
 	- 노드에 설정된 최대 Pod 수를 압축하려면 더 큰 노드 크기를 선택 
 	- 모니터링 및 로깅과 같은 모든 노드에서 실행되는 서비스의 공간을 최소화 한다. 
 	- 두 개 이상의 노드를 배포. 이렇게 하면 워크로드에 두 개의 복제본이 있는 고가용성 패턴을 구성할 수 있다. AKS를 사용하면 클러스터를 다시 만들지 않고 노드 수를 변경할 수 있다. 
@@ -203,10 +203,10 @@ apiVersion: rbac.authorization.k8s.io/v1
 
 | 후보                                 | 주요 특징                                                                                             | 설치방식           | 클러스터지원 | 확장성 | writable | 사용언어                  | 라이선스       | 개발자         |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------- | -------------- | ------ | --- | -------- | --------------------- | ---------- | ----------- |
-| Kubernetes Dashboard(official) | -개발자용-클라이언트에서 인증 토큰에 의한 Proxy서비스 실행 후 브라우저 사용-Service를 Nodeport로 노출하여 직접 접근 가능-제한된 기능 | 클러스터 배포        | Mono   | O   | O        | Go,TypeScript/Angular | Apache 2.0 | CNCF        |
-| Headlamp                           | -사용성 높고 UI 직관적임-사용자 권한별로 제어 가능Cross-cluster search는 불가능(예정)                               | 서버 호스팅/데스크탑    | Multi  | O   | O        | Go, TypeScript/React  | Apache 2.0 | Kinvolk     |
+| Kubernetes Dashboard(official) | -개발자용<br/>-클라이언트에서 인증 토큰에 의한 Proxy서비스 실행 후 브라우저 사용<br/>-Service를 Nodeport로 노출하여 직접 접근 가능<br/>-제한된 기능 | 클러스터 배포        | Mono   | O   | O        | Go,TypeScript/Angular | Apache 2.0 | CNCF        |
+| Headlamp                           | -사용성 높고 UI 직관적임<br/>-사용자 권한별로 제어 가능Cross<br/>-cluster search는 불가능(예정)                               | 서버 호스팅/데스크탑    | Multi  | O   | O        | Go, TypeScript/React  | Apache 2.0 | Kinvolk     |
 | Kubenav                            | 모바일 서비스 제공이 장점이나, 이로 인한 제약 발생(UI 사용성 한계)                                                          | 서버호스팅/데스크탑/모바일 | Multi  | X   | O        | Typescript,Go         | MIT        | Rico Berger |
-| K8dash                             | -클러스터 admin full 권한으로만 설정 가능-Search 기능 부족                                                     | 클러스터 배포        | Mono   | X   | O        | TypeScript/React      | Apache 2.0 | Indeed      |
+| K8dash                             | -클러스터 admin full 권한으로만 설정 가능<br/>-Search 기능 부족                                                     | 클러스터 배포        | Mono   | X   | O        | TypeScript/React      | Apache 2.0 | Indeed      |
 
 - 그 외 Kubevious, Octant, Lens, Kubernetes Web View.. Konstellate, Kubeman, Kubricks, Kubernator, Kubenetic 
 - 독립 서비스가 아닌것 - Rancher Dashboard UI, Gardener UI, Linkerd UI

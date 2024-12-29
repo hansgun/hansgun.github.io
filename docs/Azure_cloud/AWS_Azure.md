@@ -8,10 +8,10 @@ sidebar_position: 6
 
 | 구분        | Azure                                                     | AWS                                 |
 | --------- | --------------------------------------------------------- | ----------------------------------- |
-| 리소스 계층 표준 | - Management Group \- Subscription\- Resource Group | - AWS Organization\- AWS Account |
+| 리소스 계층 표준 | - Management Group <br/> - Subscription <br/> - Resource Group | - AWS Organization<br/>- AWS Account |
 | 리소스 관리 표준 | Azure Policy                                              | AWS Config                          |
-| 사용자 역할 표준 | Azure User, Group\Azure RBAC                           | AWS IAM Role, Policy                |
-| 표준 명명 규칙  | Naming Convention\Resource Tag                         | AWS Tag                             |
+| 사용자 역할 표준 | - Azure User, Group<br/>- Azure RBAC                           | AWS IAM Role, Policy                |
+| 표준 명명 규칙  | - Naming Convention<br/>- Resource Tag                         | AWS Tag                             |
 
 # 2. Hierarchy 비교
 | 구분     | Azure                                                                                         | AWS                                     |
@@ -35,7 +35,7 @@ sidebar_position: 6
 
 1. 명명은 모두 소문자 활용
 2. `-` 을 제외한 특수 문자나 스페이스는 허용되지 않음 
-	1. Azure 리소스의 명명 규칙은 리소스마다 다르기 때문에 그 특성에 맞게 규칙을 사용 \
+	1. Azure 리소스의 명명 규칙은 리소스마다 다르기 때문에 그 특성에 맞게 규칙을 사용 
 		a. 대부분의 리소스는 영문 대소문자, 하이픈이 허용되는 경우이며, 아래와 같은 패턴을 기본 규칙으로 한다. \
 		   `<서비스명>-<환경>-<Azure 서비스명><##>` \
 		b. Subscription과 같이 _글로벌 서비스인 경우_ 아래와 같은 패턴을 기본 규칙으로 한다. \
@@ -67,7 +67,7 @@ sidebar_position: 6
 | 3   | PublicIP Create Deny                                                   | Public IP의 생성을 막도록 강제하는 Custom Policy                                                                                                                                                         |                    |
 | 4   | Audits usage of custom RBAC rules                                      | 소유자, 기여자, reader와 같은 Built-in Role 이 아닌 Custom Role을 만드는 것을 감시                                                                                                                                |                    |
 | 5   | Audits VMs that do not use managed disks                               | 관리 디스크를 사용하지 않는 VM을 감시                                                                                                                                                                        |                    |
-| 6   | Secure transfer to storage accounts should be enalbed                  | Storage Account의 Secure Transfer를 사용하는 지 감사 \Secure Transfer는 Storage Account가 HTTPS의 요청만 수락하도록 강제하는 옵션. HTTPS를 사용하면 서버와 서비스 간의 인증이 보장되고 중간 관리자, 도청 및 세션 하이잭킹과 같은 네트워크 계층 공격으로부터 데이터 보호 가능 |                    |
+| 6   | Secure transfer to storage accounts should be enalbed                  | Storage Account의 Secure Transfer를 사용하는 지 감사 <br/>Secure Transfer는 Storage Account가 HTTPS의 요청만 수락하도록 강제하는 옵션. HTTPS를 사용하면 서버와 서비스 간의 인증이 보장되고 중간 관리자, 도청 및 세션 하이잭킹과 같은 네트워크 계층 공격으로부터 데이터 보호 가능 |                    |
 | 7   | MFA shoud be enabeld on accounts with owner permission on subscription | 계정 또는 리소스의 침해를 방지하기 위해, 소유자 권한이 있는 모든 구독 계정에 대해 MFA를 사용하는 지 감사                                                                                                                                |                    |
 | 8   | A maximum of 3 owners should be designed for subscription              | 유출된 소유자에 의한 침해 가능성을 줄이기 위해 최대 3명의 구독 소유자를 지정하는 권고. Subscription Owner 의 수를 감사                                                                                                                 | 3명 초과시 비준수         |
 | 9   | Allowed locations                                                      | 리소스를 배포할 때 조직에서 지정할 수 있는 위치를 제한할 수 있다.                                                                                                                                                        |                    |
@@ -97,12 +97,12 @@ sidebar_position: 6
 
 | 필수항목         | Tag Key    | Tag value(예시)         | Tag 활용 목적                                           |
 | ------------ | ---------- | --------------------- | --------------------------------------------------- |
-| 리소스명         | cz-name    | datalake-p-vpc-       | 리소스 식별 목적으로 사용 \태그 그룹 기능은 지원하지 않되, Asset 태그정보 제공 |
+| 리소스명         | cz-name    | datalake-p-vpc-       | 리소스 식별 목적으로 사용 <br/>태그 그룹 기능은 지원하지 않되, Asset 태그정보 제공 |
 | 프로젝트         | cz-project | datalake, 프로젝트 코드     | 자원을 소유하는 프로젝트 식별                                    |
 | 팀/조직명        | cz-org     | ops_tf, 운영_tf         | 자원을 소유/운영하는 조직 식별                                   |
 | 운영환경         | cz-stage   | product, staging, dev | 해당 리소스의 서비스 환경을 특성으로 구분                             |
 | 운영소유자        | cz-owner   | 홍길동                   | 자원을 운영 또는 Ownership을 가진 사용자명                        |
-| Application명 | cz-msp     | hr, mis, portal       | 사용 목적에 따라 자유롭게 정의할 수 있는 태그\                      |
+| Application명 | cz-msp     | hr, mis, portal       | 사용 목적에 따라 자유롭게 정의할 수 있는 태그                   |
 | 사용자 정의 태그1   | cz-owner2  |                       |                                                     |
 | 사용자 정의 태그2   |            |                       |                                                     |
 | 사용자 정의 태그3   |            |                       |                                                     |
