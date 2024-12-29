@@ -1,16 +1,16 @@
 {
   "permalink": "/helllo_world",
   "source": "@site/blog/helllo_world.md",
-  "title": "Hello World!",
+  "title": "Moved!",
   "description": "Hello !",
   "date": "2024-12-28T12:04:31.000Z",
   "tags": [],
-  "readingTime": 0.06,
+  "readingTime": 0.075,
   "hasTruncateMarker": true,
   "authors": [],
   "frontMatter": {
     "layout": "post",
-    "title": "Hello World!",
+    "title": "Moved!",
     "category": "work"
   },
   "unlisted": false,

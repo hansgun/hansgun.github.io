@@ -98,7 +98,7 @@ export default {
         },
         {
           "to": "/archive",
-          "label": "All-BLogs",
+          "label": "Blog-Archive",
           "position": "left"
         },
         {

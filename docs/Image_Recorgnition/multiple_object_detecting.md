@@ -20,7 +20,9 @@ Image Segmentation은 **이미지에서 특정 클래스에 속하는 각 픽�
 > Apply cutting-edge research to train deep neural networks on problems ranging from perception to control. Our per-camera networks analyze raw images to perform **semantic segmentation**, **object detection** and **monocular depth estimation**. Our birds-eye-view networks take video from all cameras to output the road layout, static infrastructure and 3D objects directly in the top-down view. Our networks learn from the most complicated and diverse scenarios in the world, iteratively sourced from our fleet of millions of vehicles in real time. A full build of Autopilot neural networks involves 48 networks that take 70,000 GPU hours to train 🔥. Together, they output 1,000 distinct tensors (predictions) at each timestep.
 
 
-<iframe width="700" height="587" src="https://www.tesla.com/sites/default/files/images/careers/autopilot/network.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video width="700" height="587" controls>
+  <source src="https://www.tesla.com/sites/default/files/images/careers/autopilot/network.mp4" type="video/mp4" />
+</video>
 
 **SOTA 모델 - image segmentation MS COCO dataset**
 
@@ -131,21 +133,18 @@ CCTV의 설치 위치가 농가별 상이하므로, 농가별로 촬영한 이�
 
 닭 체중을 예측하기 위해서 이미지 면적에 대응되는 실제 체중 데이터가 필요하다. 농장에서 실제 무게 측정은 농장 마다 상이하며, 가장 빈번하게 측정하는 출하 예정 일주일 전에도 일일 평균 1회 이상 측정하지 않는다. 또한 측정한 무게도 천 마리 단위로 사육하는 농장에서 100마리 이상 측정하기 힘들다. 사육 이후에 도축장에서 도축 하는 과정에서 개별 무게를 측정하지만, 본 모델에서 활용하기엔 시간적 차이가 크다. 따라서 본 모델에서는 이미지-면적을 수집할 수 있는 통합체중계를 자체 개발 하여 데이터를 수집하였다.
 
-통합 체중계의 모양은 아래와 같다.
-![](./img/20221207_2.png)
-
 상단의 박스 모듈에는 카메라와 라이다 센서가 내장되어 있다. 하단부 중앙에 위치한 사각형의 모듈에는 로드셀 센서가 내장되어 무게를 측정할 수 있다.
 
 라이다 센서와 로드셀 센서로 닭이 체중계에 올라왔음을 감지한다. 라이다 센서는 체중계와 카메라 사이의 거리를, 로드셀은 무게 변화량을 감지 한다. 닭이 체중계에 올라온 경우 카메라는 이미지를 촬영하며, 로드셀은 20ms 단위로 20회 측정한 데이터를 이미지와 함께 전송하게 된다.
 
-![](./img/H01_S1_20220901062618_farm_image_real_f1bdee7fa41b.jpg)
-![](./img/H01_S1_20220901062618_farm_image_real_f1bdee7fa41b.jpg)
+<!-- ![](./img/H01_S1_20220901062618_farm_image_real_f1bdee7fa41b.jpg)
+![](./img/H01_S1_20220901062618_farm_image_real_f1bdee7fa41b.jpg) -->
 
-![](./img/H01_S1_20220828023501_farm_image_real_a8d2b9a0f544.jpg)
+<!-- <!-- ![](./img/H01_S1_20220828023501_farm_image_real_a8d2b9a0f544.jpg) -->
 
-![](./img/H01_S1_20220901032951_farm_image_real_7dc278195220.jpg)
+<!-- ![](./img/H01_S1_20220901032951_farm_image_real_7dc278195220.jpg) -->
 
-![](./img/H01_S1_20220829081052_farm_image_real_7442c8e1f686.jpg)
+![](./img/H01_S1_20220829081052_farm_image_real_7442c8e1f686.jpg) -->
 
 ![](./img/20221207_3.png)
 ![](./img/test.jpg)
@@ -200,6 +199,7 @@ CCTV의 설치 위치가 농가별 상이하므로, 농가별로 촬영한 이�
 
 U-Net segmentation 예제
 
-> [!info] Semantic Segmentation을 활용한 차량 파손 탐지 딥러닝 모델 개발기  
+> `info` 
+> **Semantic Segmentation을 활용한 차량 파손 탐지 딥러닝 모델 개발기**
 > 쏘카에서 2019년 하반기에 딥러닝 기반의 차량 파손 탐지 모델을 개발했습니다. 이 포스트를 통해 왜 차량 파손 탐지 모델을 만들게 되었는지, 어떤 고민들을 거쳐 요구사항을 설정하였는지, 어떤 기술들이 사용되었는지 등 프로젝트의 전반적인 내용을 소개하는 글입니다. 먼저 사용자가 쏘카 앱을 통해 쏘카를 대여하고 운행하는 과정을 알아보겠습니다. 1) 사용자가 차량을 이용할 쏘카존을 선택합니다.  
 > [https://tech.socarcorp.kr/data/2020/02/13/car-damage-segmentation-model.html](https://tech.socarcorp.kr/data/2020/02/13/car-damage-segmentation-model.html)
