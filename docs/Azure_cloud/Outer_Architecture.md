@@ -22,9 +22,9 @@ sidebar_position: 2
 ## 1-1. 워크로드 영역의 Cloud Service
 | 분류                | 자원명(Azure)       | 용도                                              | spec       | 비고                                                                     |
 | ----------------- | ---------------- | ----------------------------------------------- | ---------- | ---------------------------------------------------------------------- |
-| K8s               | AKS              | 서비스 워크로드                                        | 3 nodes    | -Load Balancer:서비스노출 연계 <br/>-KeyVault: 환경변수-Storage Account:공용스토리지 |
+| K8s               | AKS              | 서비스 워크로드                                        | 3 nodes    | -Load Balancer:서비스노출 연계 <br/>-KeyVault: 환경변수<br/>-Storage Account:공용스토리지 |
 | MessageBroker | Event Hubs       | -App Service의 Event Pub/Sub<br/>-CDC 데이터 Pub/Sub | Premium    | Private Link 구성                                                        |
-| DB                | Azure PostgreSQL | 표준 RDBMSlegacy Oracle과의 호환성(Heap table)     | 2 Flexible | DB subnet 구성Private Link 연결                                        |
+| DB                | Azure PostgreSQL | 표준 RDBMSlegacy Oracle과의 호환성(Heap table)     | 2 Flexible | DB subnet 구성<br/>Private Link 연결                                        |
 | CDC               | Kafka Connect    | On-prem. Oracle과 Cloud PostgreSQL 동기화           | VM         | OSS를 활용 자체 개발(Kafka Connect, Debezium)                                 |
 
 > **Azure Database for PostgreSQL**
@@ -34,7 +34,7 @@ sidebar_position: 2
 | 분류      | 자원명                      | Azure Service | 용도                   | spec      | 비고                              |
 | ------- | ------------------------ | ------------- | -------------------- | --------- | ------------------------------- |
 | DevOps  | Github Ent.              | VM            | 소스코드 저장소             | 1 VM      | -설치형<br/>-라이선스 별도 구매             |
-|         | self-hosted Agent        | VM            | 빌드 및 배포 서버           | 1 VM      | -설치형<br/>-Organization별 추가 설치 필요 |
+|         | self-hosted Agent        | VM            | 빌드 및 배포 서버           | 1 VM      | -설치형<br/>-Organization별 추가 설치 |
 |         | Azure Container Registry | PaaS          | 이미지 저장소              | Premium   | -Private Link 구성                |
 | JumpBox | Jumpbox Linux            | VM            | AKS, VM 관리 접속 호스트    | linux 1VM |                                 |
 |         | Jumpbox Win.             | VM            | 자원관리용 접속 호스트         | Win 1VM   |                                 |
