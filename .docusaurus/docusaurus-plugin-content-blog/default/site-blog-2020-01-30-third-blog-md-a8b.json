@@ -19,6 +19,9 @@
         "linkedin": "https://www.linkedin.com/in/hanbyulcho1/",
         "github": "https://github.com/hansgun"
       },
+      "descriptions": [
+        "두 딸의 아빠"
+      ],
       "imageURL": "https://github.com/hansgun.png",
       "key": "hansgun"
     }
@@ -36,6 +39,7 @@
     ]
   },
   "unlisted": false,
+  "lastUpdatedAt": 1539502055000,
   "prevItem": {
     "title": "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]",
     "permalink": "/2019/11/17/first-blog"

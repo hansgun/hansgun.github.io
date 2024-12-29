@@ -14,6 +14,7 @@
     "category": "work"
   },
   "unlisted": false,
+  "lastUpdatedAt": 1539502055000,
   "nextItem": {
     "title": "Setup Prometheus on private k8s cluster",
     "permalink": "/2024/12/18/forth-prometheus"

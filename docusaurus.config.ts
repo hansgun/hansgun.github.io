@@ -59,11 +59,12 @@ const config: Config = {
         },
         blog: {
           routeBasePath: "/",
-          blogSidebarTitle: 'All posts',
-          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'Recent 5',
+          blogSidebarCount: 5,
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           showReadingTime: true,
+          showLastUpdateTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,

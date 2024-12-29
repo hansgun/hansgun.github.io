@@ -32,6 +32,9 @@
         "linkedin": "https://www.linkedin.com/in/hanbyulcho1/",
         "github": "https://github.com/hansgun"
       },
+      "descriptions": [
+        "두 딸의 아빠"
+      ],
       "imageURL": "https://github.com/hansgun.png",
       "key": "hansgun"
     }
@@ -55,6 +58,7 @@
     ]
   },
   "unlisted": false,
+  "lastUpdatedAt": 1539502055000,
   "prevItem": {
     "title": "AKS terraform으로 시작해보기",
     "permalink": "/2024/10/26/sixth-terrform-aks"

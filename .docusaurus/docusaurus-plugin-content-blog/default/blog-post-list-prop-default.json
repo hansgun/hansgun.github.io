@@ -1,5 +1,5 @@
 {
-  "title": "All posts",
+  "title": "Recent 5",
   "items": [
     {
       "title": "Moved!",
@@ -30,18 +30,6 @@
       "permalink": "/2020/01/29/second-blog",
       "unlisted": false,
       "date": "2020-01-28T06:38:01.000Z"
-    },
-    {
-      "title": "Setup CI/CD [Jenkins+Nexus for Spring, Docker, R]",
-      "permalink": "/2019/11/17/first-blog",
-      "unlisted": false,
-      "date": "2019-11-17T16:16:01.000Z"
-    },
-    {
-      "title": "Set up project dev environments",
-      "permalink": "/2020/01/30/third-blog",
-      "unlisted": false,
-      "date": "2019-01-29T00:16:01.000Z"
     }
   ]
 }

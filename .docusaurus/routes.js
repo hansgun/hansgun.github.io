@@ -39,32 +39,32 @@ export default [
   },
   {
     path: '/2019/11/17/first-blog',
-    component: ComponentCreator('/2019/11/17/first-blog', 'd5b'),
+    component: ComponentCreator('/2019/11/17/first-blog', 'b68'),
     exact: true
   },
   {
     path: '/2020/01/29/second-blog',
-    component: ComponentCreator('/2020/01/29/second-blog', 'bc3'),
+    component: ComponentCreator('/2020/01/29/second-blog', '422'),
     exact: true
   },
   {
     path: '/2020/01/30/third-blog',
-    component: ComponentCreator('/2020/01/30/third-blog', 'f06'),
+    component: ComponentCreator('/2020/01/30/third-blog', '848'),
     exact: true
   },
   {
     path: '/2024/10/26/sixth-terrform-aks',
-    component: ComponentCreator('/2024/10/26/sixth-terrform-aks', 'e60'),
+    component: ComponentCreator('/2024/10/26/sixth-terrform-aks', 'e6f'),
     exact: true
   },
   {
     path: '/2024/11/01/fifth-Redis-cluster',
-    component: ComponentCreator('/2024/11/01/fifth-Redis-cluster', '307'),
+    component: ComponentCreator('/2024/11/01/fifth-Redis-cluster', '78a'),
     exact: true
   },
   {
     path: '/2024/12/18/forth-prometheus',
-    component: ComponentCreator('/2024/12/18/forth-prometheus', 'c30'),
+    component: ComponentCreator('/2024/12/18/forth-prometheus', '316'),
     exact: true
   },
   {
@@ -84,7 +84,7 @@ export default [
   },
   {
     path: '/helllo_world',
-    component: ComponentCreator('/helllo_world', 'ead'),
+    component: ComponentCreator('/helllo_world', '376'),
     exact: true
   },
   {
