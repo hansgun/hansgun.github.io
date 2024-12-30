@@ -447,7 +447,7 @@ if __name__ == '__main__':
 - master - slave는 한 쌍으로 생성되었으며, 같은 네트워크 대역(netmask:24)을 사용함 
 - cluster 는 할당 가능한 key 범위(0~16383) 에 대해 cluster의 master node 수 만큼 분할하여 운영됨
 - Failover 감지는 Full Mesh 구조의 `gossip` 프로토콜 사용 
-  - master 가 down 됨을 감지하는 timeout은 `down-after-milliseconds` 파라미터를 사용하며, default 30s 이다. 
+  - master 가 down 됨을 감지하는 timeout은 `cluster-node-timeout` 파라미터를 사용하며, default 15s 이다. 
   - master Down 이후 slave 중에 새로운 master를 선출하는 timeout은 `failover-timeout` 파라미터로 default는 180s(3min.) 이다. 
     - master 선출을 위한 알고리즘은 `Raft', 'quorum` 을 사용한다. cf) Paxos 
 
