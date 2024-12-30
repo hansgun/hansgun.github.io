@@ -334,9 +334,6 @@ kubectl apply -f 01.sts.yaml -n ns-han-redis
 - `statefulSet`으로 진행 시 pod에 대해 기본적으로 일련 번호가 부여됨 
 ![cluster|300](img/redis_cluster.png)
 
-- redis 동작 확인(`kubectl exec`)
-![redis-cli|300](img/redic_cli.png)
-
 
 ## 4-2. client 설정
 - Flask 기반의 python 프로그램으로 sharding 된 cluster 접근 되는 지 체크. 별도의 `namespace`에 배포하여 실제 환경과 비슷하게 구현
@@ -441,6 +438,9 @@ if __name__ == '__main__':
     # Flask 서버 실행
     app.run(host='0.0.0.0', port=5000)
 ```
+
+- redis 동작 확인(`kubectl exec`)
+![redis-cli|300](img/redic_cli.png)
 
 
 # 5. `Failover` Test
