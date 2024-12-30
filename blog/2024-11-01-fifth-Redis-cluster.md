@@ -383,7 +383,7 @@ app = Flask(__name__)
 
 # Redis 서버에 연결
 
-# headless service 주소
+# headless service 주소 활용
 # session failover 를 위한 설정 
 from rediscluster import RedisCluster
 startup_nodes = [
@@ -508,11 +508,10 @@ spec:
 
 
 
-<!-- > [참고사이트]() -->
 
-# 7. [참고 사이트]
+<!-- # 7. [참고 사이트]
 
 # Epilog
-- 
+-  -->
 
 ---
