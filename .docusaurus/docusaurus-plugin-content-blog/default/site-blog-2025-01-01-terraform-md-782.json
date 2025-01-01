@@ -1,0 +1,43 @@
+{
+  "permalink": "/2025/01/01/terraform",
+  "source": "@site/blog/2025-01-01-terraform.md",
+  "title": "Terraform ",
+  "description": "1-1. IaC 필요성",
+  "date": "2025-01-21T21:00:01.000Z",
+  "tags": [],
+  "readingTime": 4.475,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Hanbyul Cho",
+      "title": "Engineer",
+      "url": "https://github.com/hansgun",
+      "page": {
+        "permalink": "/authors/hansgun"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/hanbyulcho1/",
+        "github": "https://github.com/hansgun"
+      },
+      "descriptions": [
+        "두 딸의 아빠"
+      ],
+      "imageURL": "https://github.com/hansgun.png",
+      "key": "hansgun"
+    }
+  ],
+  "frontMatter": {
+    "title": "Terraform ",
+    "date": "2025-01-21 21:00:01 -0600",
+    "toc": true,
+    "authors": [
+      "hansgun"
+    ]
+  },
+  "unlisted": false,
+  "lastUpdatedAt": 1539502055000,
+  "nextItem": {
+    "title": "Moved!",
+    "permalink": "/helllo_world"
+  }
+}

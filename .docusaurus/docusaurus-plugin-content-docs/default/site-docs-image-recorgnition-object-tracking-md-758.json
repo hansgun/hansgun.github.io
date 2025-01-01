@@ -19,5 +19,9 @@
   "previous": {
     "title": "01. multiple_object_detecting",
     "permalink": "/docs/Image_Recorgnition/multiple_object_detecting"
+  },
+  "next": {
+    "title": "C. Terraform",
+    "permalink": "/docs/category/c-terraform"
   }
 }

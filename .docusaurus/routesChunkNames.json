@@ -368,17 +368,17 @@
     ],
     "__props": "__props---tags-tempo-650-83a"
   },
-  "/docs-677": {
+  "/docs-b40": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-757": {
+  "/docs-e5d": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-08c": {
+  "/docs-bef": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/Azure_cloud/AWS_Azure-9a6": {
@@ -413,6 +413,10 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-b-image-recorgnitionffe-9e8"
   },
+  "/docs/category/c-terraform-0fb": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-c-terraform-759-8a1"
+  },
   "/docs/Image_Recorgnition/multiple_object_detecting-a5d": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-image-recorgnition-multiple-object-detecting-0-a-5-d86"
@@ -420,6 +424,14 @@
   "/docs/Image_Recorgnition/object_tracking-b96": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-image-recorgnition-object-tracking-758-3f2"
+  },
+  "/docs/Terraform /Iac-36a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-terraform-iac-008-fc9"
+  },
+  "/docs/Terraform /TerraformIntro-8ba": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-terraform-terraform-intro-34-a-004"
   },
   "/-6d1": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",

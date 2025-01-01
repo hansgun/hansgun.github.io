@@ -1,6 +1,6 @@
 {
-  "label": "A. Azure_cloud",
-  "position": 1,
+  "label": "C. Terraform",
+  "position": 3,
   "link": {
     "type": "generated-index"
   }

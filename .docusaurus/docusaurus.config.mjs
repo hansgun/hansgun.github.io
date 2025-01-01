@@ -112,7 +112,7 @@ export default {
     },
     "footer": {
       "style": "dark",
-      "copyright": "Copyright © 2024 My Project, Inc. Built with Docusaurus.",
+      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus.",
       "links": []
     },
     "prism": {

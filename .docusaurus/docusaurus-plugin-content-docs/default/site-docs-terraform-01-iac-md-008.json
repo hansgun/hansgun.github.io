@@ -1,0 +1,27 @@
+{
+  "id": "Terraform /Iac",
+  "title": "01. IaC 비교",
+  "description": "1-1. IaC 필요성",
+  "source": "@site/docs/Terraform /01.Iac.md",
+  "sourceDirName": "Terraform ",
+  "slug": "/Terraform /Iac",
+  "permalink": "/docs/Terraform /Iac",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Terraform /01.Iac.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "C. Terraform",
+    "permalink": "/docs/category/c-terraform"
+  },
+  "next": {
+    "title": "02. Terraform Intro",
+    "permalink": "/docs/Terraform /TerraformIntro"
+  }
+}

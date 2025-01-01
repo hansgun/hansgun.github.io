@@ -439,7 +439,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 ```
 
-- redis 동작 확인(`kubectl exec`)
+- redis key 접근 확인(`kubectl exec`)
 ![redis-cli|300](img/redic_cli.png)
 
 
@@ -452,11 +452,12 @@ if __name__ == '__main__':
     - master 선출을 위한 알고리즘은 `Raft', 'quorum` 을 사용한다. cf) Paxos 
 
 ## 5-1. **pod termination**
-  1. pod 강제 종료 : `10.100.5.22` 종료
+  1. pod 강제 종료 : `10.100.5.22` 종료<br/>
   ~~2. gossip protocol을 통해 failver master 인지~~
   ~~3. vote 과정을 통해 slave를 master로 승격~~
-  2. 실제는 replicaSet에 의해 pod가 자동 start 됨. 또한 PV를 통하여 데이터를 저장하므로, transaction 실패 이외에 데이터 유실도 없음 
-      - 일정 시간 소요 후 sequence 값도 동기화 됨 - 복제 구성
+  2. 실제는 replicaSet에 의해 15초 이전에 pod가 자동 start 됨. 또한 PV를 통하여 데이터를 저장하므로, transaction 실패 이외에 데이터 유실도 없음 
+      - 일정 시간 소요 후 sequence 값도 동기화 됨 : 복제 구성
+      - cluster-node-timeout 을 조정하더라도 비슷한 결과 도출
   3. auto-start 되지 않게 다른 방법 접근 필요
 ```bash
 

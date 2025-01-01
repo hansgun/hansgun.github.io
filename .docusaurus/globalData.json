@@ -51,6 +51,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Terraform /Iac",
+              "path": "/docs/Terraform /Iac",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Terraform /TerraformIntro",
+              "path": "/docs/Terraform /TerraformIntro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "/category/a-azure_cloud",
               "path": "/docs/category/a-azure_cloud",
               "sidebar": "tutorialSidebar"
@@ -58,6 +68,11 @@
             {
               "id": "/category/b-image_recorgnition",
               "path": "/docs/category/b-image_recorgnition",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/c-terraform",
+              "path": "/docs/category/c-terraform",
               "sidebar": "tutorialSidebar"
             }
           ],

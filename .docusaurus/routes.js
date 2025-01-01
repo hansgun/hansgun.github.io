@@ -169,15 +169,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '677'),
+    component: ComponentCreator('/docs', 'b40'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '757'),
+        component: ComponentCreator('/docs', 'e5d'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '08c'),
+            component: ComponentCreator('/docs', 'bef'),
             routes: [
               {
                 path: '/docs/Azure_cloud/AWS_Azure',
@@ -228,6 +228,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/category/c-terraform',
+                component: ComponentCreator('/docs/category/c-terraform', '0fb'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/Image_Recorgnition/multiple_object_detecting',
                 component: ComponentCreator('/docs/Image_Recorgnition/multiple_object_detecting', 'a5d'),
                 exact: true,
@@ -236,6 +242,18 @@ export default [
               {
                 path: '/docs/Image_Recorgnition/object_tracking',
                 component: ComponentCreator('/docs/Image_Recorgnition/object_tracking', 'b96'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Terraform /Iac',
+                component: ComponentCreator('/docs/Terraform /Iac', '36a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Terraform /TerraformIntro',
+                component: ComponentCreator('/docs/Terraform /TerraformIntro', '8ba'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
