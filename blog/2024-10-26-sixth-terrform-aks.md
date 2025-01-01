@@ -274,7 +274,7 @@ provider "azurerm" {
 ## 2. Terraform 실생 
 
 ```mermaid
-graph LR;
+graph TD;
   A[terraform init] -.-> B[terraform plan] -.-> C[terraform apply] -.-> D[terraform destroy];
   A -.-> E[terraform validate] -.-> B;
   C -.-> F[terraform output] -.-> G[terraform show];
