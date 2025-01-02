@@ -1,0 +1,23 @@
+{
+  "id": "Terraform /backend, state",
+  "title": "04. backend, state",
+  "description": "backend란?",
+  "source": "@site/docs/Terraform /04.backend, state.md",
+  "sourceDirName": "Terraform ",
+  "slug": "/Terraform /backend, state",
+  "permalink": "/docs/Terraform /backend, state",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Terraform /04.backend, state.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "03. Terraform variables , flow control",
+    "permalink": "/docs/Terraform /variable,state"
+  }
+}

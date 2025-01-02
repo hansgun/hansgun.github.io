@@ -1,0 +1,27 @@
+{
+  "id": "Terraform /variable,state",
+  "title": "03. Terraform variables , flow control",
+  "description": "- 코드 수정 없이 module 에 영향을 줄 수 있는 요소",
+  "source": "@site/docs/Terraform /03.variable,state.md",
+  "sourceDirName": "Terraform ",
+  "slug": "/Terraform /variable,state",
+  "permalink": "/docs/Terraform /variable,state",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Terraform /03.variable,state.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "02. Terraform Intro",
+    "permalink": "/docs/Terraform /TerraformIntro"
+  },
+  "next": {
+    "title": "04. backend, state",
+    "permalink": "/docs/Terraform /backend, state"
+  }
+}

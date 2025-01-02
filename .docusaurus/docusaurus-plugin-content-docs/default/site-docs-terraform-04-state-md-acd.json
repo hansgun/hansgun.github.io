@@ -1,0 +1,23 @@
+{
+  "id": "Terraform /state",
+  "title": "04. state",
+  "description": "",
+  "source": "@site/docs/Terraform /04.state.md",
+  "sourceDirName": "Terraform ",
+  "slug": "/Terraform /state",
+  "permalink": "/docs/Terraform /state",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Terraform /04.state.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "03. Terraform variables , flow control",
+    "permalink": "/docs/Terraform /variable,state"
+  }
+}

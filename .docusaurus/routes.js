@@ -169,15 +169,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'b40'),
+    component: ComponentCreator('/docs', 'faa'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'e5d'),
+        component: ComponentCreator('/docs', 'e2b'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'bef'),
+            component: ComponentCreator('/docs', '5ad'),
             routes: [
               {
                 path: '/docs/Azure_cloud/AWS_Azure',
@@ -246,6 +246,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/Terraform /backend, state',
+                component: ComponentCreator('/docs/Terraform /backend, state', '968'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/Terraform /Iac',
                 component: ComponentCreator('/docs/Terraform /Iac', '36a'),
                 exact: true,
@@ -254,6 +260,12 @@ export default [
               {
                 path: '/docs/Terraform /TerraformIntro',
                 component: ComponentCreator('/docs/Terraform /TerraformIntro', '8ba'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Terraform /variable,state',
+                component: ComponentCreator('/docs/Terraform /variable,state', '952'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

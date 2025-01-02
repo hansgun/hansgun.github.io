@@ -19,5 +19,9 @@
   "previous": {
     "title": "01. IaC 비교",
     "permalink": "/docs/Terraform /Iac"
+  },
+  "next": {
+    "title": "03. Terraform variables , flow control",
+    "permalink": "/docs/Terraform /variable,state"
   }
 }
