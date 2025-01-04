@@ -368,18 +368,22 @@
     ],
     "__props": "__props---tags-tempo-650-83a"
   },
-  "/docs-faa": {
+  "/docs-186": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-e2b": {
+  "/docs-72b": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-5ad": {
+  "/docs-fdb": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/Ansible/Ansible-b40": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ansible-ansible-0-f-2-c0f"
   },
   "/docs/Azure_cloud/AWS_Azure-9a6": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -417,6 +421,10 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-c-terraform-759-8a1"
   },
+  "/docs/category/d-ansible-059": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-d-ansiblee-93-ee7"
+  },
   "/docs/Image_Recorgnition/multiple_object_detecting-a5d": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-image-recorgnition-multiple-object-detecting-0-a-5-d86"
@@ -425,13 +433,25 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-image-recorgnition-object-tracking-758-3f2"
   },
-  "/docs/Terraform /backend, state-968": {
+  "/docs/Terraform /backend, state, workspace-27f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-terraform-backend-statea-9-e-48e"
+    "content": "content---docs-terraform-backend-state-workspace-24-e-63e"
+  },
+  "/docs/Terraform /external modules-f45": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-terraform-external-modulesd-56-281"
   },
   "/docs/Terraform /Iac-36a": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-terraform-iac-008-fc9"
+  },
+  "/docs/Terraform /Outtro-cd6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-terraform-outtroc-5-e-162"
+  },
+  "/docs/Terraform /provisioner-54c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-terraform-provisionerc-93-131"
   },
   "/docs/Terraform /TerraformIntro-8ba": {
     "__comp": "__comp---theme-doc-item-178-a40",

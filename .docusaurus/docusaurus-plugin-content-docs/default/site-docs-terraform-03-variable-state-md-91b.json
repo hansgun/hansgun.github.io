@@ -21,7 +21,7 @@
     "permalink": "/docs/Terraform /TerraformIntro"
   },
   "next": {
-    "title": "04. backend, state",
-    "permalink": "/docs/Terraform /backend, state"
+    "title": "04. backend, state, workspace",
+    "permalink": "/docs/Terraform /backend, state, workspace"
   }
 }

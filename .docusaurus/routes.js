@@ -169,16 +169,22 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'faa'),
+    component: ComponentCreator('/docs', '186'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'e2b'),
+        component: ComponentCreator('/docs', '72b'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '5ad'),
+            component: ComponentCreator('/docs', 'fdb'),
             routes: [
+              {
+                path: '/docs/Ansible/Ansible',
+                component: ComponentCreator('/docs/Ansible/Ansible', 'b40'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs/Azure_cloud/AWS_Azure',
                 component: ComponentCreator('/docs/Azure_cloud/AWS_Azure', '9a6'),
@@ -234,6 +240,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/category/d-ansible',
+                component: ComponentCreator('/docs/category/d-ansible', '059'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/Image_Recorgnition/multiple_object_detecting',
                 component: ComponentCreator('/docs/Image_Recorgnition/multiple_object_detecting', 'a5d'),
                 exact: true,
@@ -246,14 +258,32 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Terraform /backend, state',
-                component: ComponentCreator('/docs/Terraform /backend, state', '968'),
+                path: '/docs/Terraform /backend, state, workspace',
+                component: ComponentCreator('/docs/Terraform /backend, state, workspace', '27f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Terraform /external modules',
+                component: ComponentCreator('/docs/Terraform /external modules', 'f45'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/Terraform /Iac',
                 component: ComponentCreator('/docs/Terraform /Iac', '36a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Terraform /Outtro',
+                component: ComponentCreator('/docs/Terraform /Outtro', 'cd6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Terraform /provisioner',
+                component: ComponentCreator('/docs/Terraform /provisioner', '54c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

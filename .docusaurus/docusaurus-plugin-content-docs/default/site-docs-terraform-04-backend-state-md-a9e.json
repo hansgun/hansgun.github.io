@@ -1,6 +1,6 @@
 {
   "id": "Terraform /backend, state",
-  "title": "04. backend, state",
+  "title": "04. backend, state, workspace",
   "description": "backend란?",
   "source": "@site/docs/Terraform /04.backend, state.md",
   "sourceDirName": "Terraform ",
@@ -19,5 +19,9 @@
   "previous": {
     "title": "03. Terraform variables , flow control",
     "permalink": "/docs/Terraform /variable,state"
+  },
+  "next": {
+    "title": "05.provisioner",
+    "permalink": "/docs/Terraform /provisioner"
   }
 }

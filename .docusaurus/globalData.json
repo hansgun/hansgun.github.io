@@ -11,6 +11,11 @@
           "mainDocId": "Azure_cloud/Introduction",
           "docs": [
             {
+              "id": "Ansible/Ansible",
+              "path": "/docs/Ansible/Ansible",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Azure_cloud/AWS_Azure",
               "path": "/docs/Azure_cloud/AWS_Azure",
               "sidebar": "tutorialSidebar"
@@ -51,13 +56,28 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Terraform /backend, state",
-              "path": "/docs/Terraform /backend, state",
+              "id": "Terraform /backend, state, workspace",
+              "path": "/docs/Terraform /backend, state, workspace",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Terraform /external modules",
+              "path": "/docs/Terraform /external modules",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Terraform /Iac",
               "path": "/docs/Terraform /Iac",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Terraform /Outtro",
+              "path": "/docs/Terraform /Outtro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Terraform /provisioner",
+              "path": "/docs/Terraform /provisioner",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -83,6 +103,11 @@
             {
               "id": "/category/c-terraform",
               "path": "/docs/category/c-terraform",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/d-ansible",
+              "path": "/docs/category/d-ansible",
               "sidebar": "tutorialSidebar"
             }
           ],

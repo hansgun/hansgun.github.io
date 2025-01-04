@@ -284,7 +284,7 @@ graph TD;
 ```bash
 $ terraform init 
 $ terraform plan 
-$ terraform apply 
+$ terraform apply --auto-approve
 ```
 
 ## 7. [참고 사이트]
