@@ -227,10 +227,10 @@ promtail-2f8v9          1/1     Running 0       10d
     2. opentelemery agent를 JVM 구동 시 library 형태로 주입하고, 설정에 필요한 환경변수들은 helm 배포 시 주입되도록 조작
 - 앞선 방법 중 1번의 경우 cert manager와 통신을 위해서 k8s cluster nodeport 에 대해 open이 필요하나(`port : 8443`) private cluster의 방화벽 open 필요. ~~정보보안팀에 연락하기 귀찮...~~. 2번 방법으로 진행
 - 결론적으로 설치 순서
-    0. cert manager 설치
-    1. opentelemetry operator 
-    2. opentelemetry collector
-    3. opentelemetry instrument
+    1. cert manager 설치
+    2. opentelemetry operator 
+    3. opentelemetry collector
+    4. opentelemetry instrument
       - JVM 실행 시 opentelemetry agent library로 실행 주입 
 
 - helm repo add

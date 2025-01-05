@@ -368,22 +368,34 @@
     ],
     "__props": "__props---tags-tempo-650-83a"
   },
-  "/docs-186": {
+  "/docs-33b": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-72b": {
+  "/docs-988": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-fdb": {
+  "/docs-d9a": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/Ansible/Ansible-b40": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-ansible-ansible-0-f-2-c0f"
+  },
+  "/docs/Ansible/Ansible-components-e41": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ansible-ansible-componentse-36-d06"
+  },
+  "/docs/Ansible/Ansible-example-39b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ansible-ansible-example-6-b-4-008"
+  },
+  "/docs/Ansible/vsTerraform-472": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ansible-vs-terraform-664-559"
   },
   "/docs/Azure_cloud/AWS_Azure-9a6": {
     "__comp": "__comp---theme-doc-item-178-a40",

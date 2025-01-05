@@ -16,6 +16,21 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Ansible/Ansible-components",
+              "path": "/docs/Ansible/Ansible-components",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Ansible/Ansible-example",
+              "path": "/docs/Ansible/Ansible-example",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Ansible/vsTerraform",
+              "path": "/docs/Ansible/vsTerraform",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Azure_cloud/AWS_Azure",
               "path": "/docs/Azure_cloud/AWS_Azure",
               "sidebar": "tutorialSidebar"

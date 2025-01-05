@@ -169,19 +169,37 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '186'),
+    component: ComponentCreator('/docs', '33b'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '72b'),
+        component: ComponentCreator('/docs', '988'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'fdb'),
+            component: ComponentCreator('/docs', 'd9a'),
             routes: [
               {
                 path: '/docs/Ansible/Ansible',
                 component: ComponentCreator('/docs/Ansible/Ansible', 'b40'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Ansible/Ansible-components',
+                component: ComponentCreator('/docs/Ansible/Ansible-components', 'e41'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Ansible/Ansible-example',
+                component: ComponentCreator('/docs/Ansible/Ansible-example', '39b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Ansible/vsTerraform',
+                component: ComponentCreator('/docs/Ansible/vsTerraform', '472'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
