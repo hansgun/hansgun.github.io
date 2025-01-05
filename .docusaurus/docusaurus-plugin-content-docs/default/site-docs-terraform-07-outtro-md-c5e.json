@@ -1,0 +1,27 @@
+{
+  "id": "Terraform /Outtro",
+  "title": "07.Outro",
+  "description": "1. 운영 전략",
+  "source": "@site/docs/Terraform /07.Outtro.md",
+  "sourceDirName": "Terraform ",
+  "slug": "/Terraform /Outtro",
+  "permalink": "/docs/Terraform /Outtro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Terraform /07.Outtro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "06.external modules",
+    "permalink": "/docs/Terraform /external modules"
+  },
+  "next": {
+    "title": "D. Ansible",
+    "permalink": "/docs/category/d-ansible"
+  }
+}

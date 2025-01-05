@@ -1,0 +1,27 @@
+{
+  "id": "Ansible/Ansible-example",
+  "title": "03. Ansible-example.md",
+  "description": "1. 실행 사례",
+  "source": "@site/docs/Ansible/03.Ansible-example.md",
+  "sourceDirName": "Ansible",
+  "slug": "/Ansible/Ansible-example",
+  "permalink": "/docs/Ansible/Ansible-example",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Ansible/03.Ansible-example.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "02. Ansible components",
+    "permalink": "/docs/Ansible/Ansible-components"
+  },
+  "next": {
+    "title": "04.Ansible vs Terraform Provisioner",
+    "permalink": "/docs/Ansible/vsTerraform"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Terraform /provisioner",
+  "title": "05.provisioner",
+  "description": "- 로컬이나 서버에서 스크립트를 실행하는데 사용",
+  "source": "@site/docs/Terraform /05.provisioner.md",
+  "sourceDirName": "Terraform ",
+  "slug": "/Terraform /provisioner",
+  "permalink": "/docs/Terraform /provisioner",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Terraform /05.provisioner.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "04. backend, state, workspace",
+    "permalink": "/docs/Terraform /backend, state, workspace"
+  },
+  "next": {
+    "title": "06.external modules",
+    "permalink": "/docs/Terraform /external modules"
+  }
+}

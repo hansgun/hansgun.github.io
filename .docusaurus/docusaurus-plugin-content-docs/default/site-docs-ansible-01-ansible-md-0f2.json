@@ -1,0 +1,27 @@
+{
+  "id": "Ansible/Ansible",
+  "title": "01. Ansible ?",
+  "description": "1. 소개",
+  "source": "@site/docs/Ansible/01.Ansible.md",
+  "sourceDirName": "Ansible",
+  "slug": "/Ansible/Ansible",
+  "permalink": "/docs/Ansible/Ansible",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Ansible/01.Ansible.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "D. Ansible",
+    "permalink": "/docs/category/d-ansible"
+  },
+  "next": {
+    "title": "02. Ansible components",
+    "permalink": "/docs/Ansible/Ansible-components"
+  }
+}
